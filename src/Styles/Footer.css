@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-seri;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 30px 10px 30px;
+}
+.footer-main1 {
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  background-image: url("../assets//Images/footer-top-border.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(66, 77, 89, 0.7);
+  border: 5px solid #4ac4dd;
+  border-top: none;
+  border-radius: 16px;
+}
+
+.footer-main h1 {
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins";
+  padding-top: 50px;
+}
+.footer-logo {
+  width: 25%;
+}
+.footer-logo img {
+  padding-bottom: 30px;
+  width: 60%;
+}
+.footer-logo p {
+  font-size: 14px;
+  color: #ffff;
+  padding: 0px 20px 0px 0px;
+}
+.for-bottom-border {
+  border-bottom: 3px solid #4ac4dd;
+  width: 82%;
+}
+
+.footer-main ul li {
+  list-style: none;
+  padding: 8px 0px;
+  color: #ffff;
+  align-items: center;
+  display: flex;
+}
+
+.footer-usefull-link {
+  padding: 0px 20px;
+}
+
+.footer-contact {
+  padding: 0px 20px;
+}
+
+.fotter-bottem-text {
+  text-align: center;
+}
+.fotter-bottem-text p {
+  color: #ffff;
+  font-size: 18px;
+  border-top: 2px solid #fff;
+  padding: 8px 0px;
+}
+
+.footer-mail-box input {
+  background-color: rgba(66, 77, 89, 0.7);
+  padding: 10px 5px;
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  border: 2px solid #00e5ff;
+  box-shadow: 0px 0px 20px 0px #00e5ff;
+  outline: none;
+  width: 90%;
+  color: #fff;
+}
+
+.footer-mail-box input::placeholder{
+color: #ffff;
+}
+.footer-mail-box button{
+  padding: 8px 15px;
+  background-color: #00e5ff;
+  border: 2px solid #00e5ff;
+  box-shadow: 0px 0px 20px 0px #00e5ff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+}
+
+.footer-mail-box svg{
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-mail-box{
+display: flex;
+justify-content: center;
+width: 100%;
+}

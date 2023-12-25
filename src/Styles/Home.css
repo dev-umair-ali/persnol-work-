@@ -1,0 +1,128 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.home-main-page {
+  background-image: url("../assets/Images/main-bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%; 
+  padding-top: 200px;
+
+}
+.home-hero-sec {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.home-hero-sec-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.home-hero-sec-img img{
+  margin-top: -240px;
+  width: 30%;
+ z-index: 99;
+}
+.home-hero-sec-text h1 {
+  font-family: Deutschlander;
+  font-size: 100px;
+  letter-spacing: 1px;
+  color: #ffff;
+  letter-spacing: 2px;
+}
+
+.home-hero-sec-text p {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffff;
+  width: 60%;
+}
+
+
+/* tab-container */
+.tab-container {
+  width: 80%;
+  height: 100dvh;
+  border: 5px solid rebeccapurple;
+  margin: 20px auto;
+}
+
+/* Home-about-us-main */
+.Home-about-us-main {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 30px 0px;
+  justify-content: space-between;
+}
+.home-about-text {
+  width: 40%;
+}
+.home-about-text h1 {
+  font-size: 100px;
+  color: #ffff;
+  font-family: Deutschlander;
+  letter-spacing: 2px;
+}
+
+.home-about-text h3 {
+  font-size: 30px;
+  color: #ffff;
+  font-family: "Oswald", sans-serif;
+}
+
+.home-about-text p {
+  font-size: 16px;
+  color: #ffff;
+  font-family: "Oswald", sans-serif;
+}
+
+.home-about-img {
+  width: 50%;
+  align-items: last baseline;
+  display: flex;
+}
+
+.home-about-img img {
+  width: 90%;
+  margin-top: 50px;
+  text-align: right;
+}
+
+/* renent-work-main */
+.renent-work-main {
+  width: 80%;
+  margin: auto;
+}
+
+.renent-work-text {
+  text-align: center;
+}
+.renent-work-text h1 {
+  font-size: 100px;
+  color: #ffff;
+  font-family: Deutschlander;
+  letter-spacing: 2px;
+}
+.renent-work-text h3{
+  font-size: 30px;
+  color: #ffff;
+}
+.renent-work-text p{
+  font-size: 16px;
+  color: #ffff;
+}
+
+

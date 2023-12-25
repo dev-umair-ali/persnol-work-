@@ -1,0 +1,33 @@
+
+.circle-container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #00e5ff;
+  box-shadow: 0px 0px 20px 0px #00e5ff;
+}
+
+.moving-elements {
+  display: flex;
+  animation: moveImages 5s linear infinite 0s; 
+  justify-content: center;
+}
+
+.moving-elements img {
+  width: 100%;
+  max-width: 100px; 
+  object-fit: cover;
+  margin: 5px 0; 
+  padding: 0px 5px;
+}
+
+@keyframes moveImages {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

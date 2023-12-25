@@ -1,0 +1,50 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  background-color: transparent;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  margin: auto;
+}
+
+  .logo img {
+    width: 140px;
+  }
+
+  nav {
+    display: flex;
+ 
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  nav ul a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald', sans-serif
+  }
+
+  .contact-us-nbr{
+    color: #fff;
+    font-family: 'Oswald', sans-serif
+
+  }
+
