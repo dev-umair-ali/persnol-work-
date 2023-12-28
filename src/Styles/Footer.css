@@ -38,7 +38,7 @@
   width: 60%;
 }
 .footer-logo p {
-  font-size: 14px;
+  font-size: 16px;
   color: #ffff;
   padding: 0px 20px 0px 0px;
 }
@@ -53,6 +53,7 @@
   color: #ffff;
   align-items: center;
   display: flex;
+  font-size: 16px;
 }
 
 .footer-usefull-link {

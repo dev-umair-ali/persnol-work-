@@ -1,0 +1,85 @@
+
+.custom-modified-arrow {
+  position: absolute;
+  bottom: -65px;
+  transform: translateX(-50%);
+  background-color: #42bed5;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+  border-radius: 6px;
+}
+
+.custom1-next {
+  right: 40%;
+}
+
+.custom1-prev {
+  left: 30%;
+}
+
+
+
+.bloggg .slick-slider.slick-initialized {
+  margin: 0 0px;
+  padding: 0px 0px;
+ 
+}
+
+.slick-blog-img {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.slick-blog-img img {
+  width: 100%;
+  border: 2px solid #42bed5 ;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.Slides-main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.slick-blog-text {
+    padding: 5px 10px;
+}
+
+.blog-date {
+  font-size: 14px;
+  color: white;
+}
+
+.blog-title {
+  font-size: 20px;
+  color: white;
+}
+.blog-description {
+  color: white;
+  font-size: 16px;
+}
+
+ .bloggg .slick-slide{
+    margin-left: 0px;
+    width: 100%;
+    padding: 0px 10px;
+ }
+
+ .bloggg .slick-list {
+    margin: auto;
+    width: 100%;
+    margin-left: 0px;
+}
+
+
+@media only screen and (min-width: 1700px) and (max-width: 2000px) {
+.slick-blog-img img{
+    height: 190px;
+}
+}
