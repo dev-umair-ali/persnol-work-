@@ -32,21 +32,21 @@
 }
 .home-hero-sec-text h1 {
   font-family: Deutschlander;
-  font-size: 100px;
+  font-size: 85px;
   letter-spacing: 1px;
   color: #ffff;
   letter-spacing: 2px;
+  line-height: 85px;
 }
 
 .home-hero-sec-text p {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   color: #ffff;
   width: 60%;
 }
 
-/* tab-container */
+/*-========== tab-container ==========*/
 .tab-container {
   width: 80%;
   height: 100dvh;
@@ -54,7 +54,7 @@
   margin: 20px auto;
 }
 
-/* Home-about-us-main */
+/* ================Home-about-us-main ===============*/
 .Home-about-us-main {
   width: 80%;
   margin: auto;
@@ -66,22 +66,21 @@
   width: 40%;
 }
 .home-about-text h1 {
-  font-size: 100px;
+  font-size: 85px;
   color: #ffff;
   font-family: Deutschlander;
   letter-spacing: 2px;
+  line-height: 85px;
 }
 
 .home-about-text h3 {
-  font-size: 30px;
+  font-size: 25px;
   color: #ffff;
-  font-family: "Oswald", sans-serif;
 }
 
 .home-about-text p {
   font-size: 16px;
-  color: #ffff;
-  font-family: "Oswald", sans-serif;
+  color: #ffff;letter-spacing: 1px;
 }
 
 .home-about-img {
@@ -114,7 +113,7 @@
     transform: translate(0, -0px);
   }
 }
-/* renent-work-main */
+/* =======================renent-work-main=========================== */
 .renent-work-main {
   width: 80%;
   margin: auto;
@@ -124,37 +123,65 @@
   text-align: center;
 }
 .renent-work-text h1 {
-  font-size: 100px;
+  font-size:85px;
   color: #ffff;
   font-family: Deutschlander;
   letter-spacing: 2px;
+  line-height: 85px;
 }
 .renent-work-text h3 {
-  font-size: 30px;
+  font-size: 25px;
   color: #ffff;
 }
 .renent-work-text p {
   font-size: 16px;
   color: #ffff;
+  letter-spacing: 1px;
 }
 
-/* Home-blog-main */
+/* =========================Home-blog-main======================================= */
 .Home-blog-main {
   display: flex;
   justify-content: space-between;
-  width: 80%;
   margin: auto;
-  border: 2px solid red;
+  padding: 40px 0px;
+  width: 80%;
+  position: relative;
 }
 
 .home-blog-text {
-  width: 40%;
+  width: 55%;
+}
+.home-blog-text h1{
+  font-size:85px;
+  color: #ffff;
+  font-family: Deutschlander;
+  letter-spacing: 2px;
+  line-height: 85px;
+}
+.home-blog-text p{
+  font-size: 16px;
+  color: #ffff;
+  letter-spacing: 1px;
+}
+.home-blog-text h3{
+  font-size: 25px;
+  color: #ffff;
 }
 .home-blog-slider {
   width: 40%;
 }
+.home-blog-Carousel{
+  position: relative;
+  width: 53%;
+  position: absolute; 
+  top: 0; 
+  right: -150px; /* Move 100px to the right */
+  width: calc(40% + 100px); /* Calculate width including the 100px margin */
+  box-sizing: border-box;
+}
 
-/* home-started-new */
+/*================================== home-started-new===================================== */
 .home-started-new {
   width: 80%;
   margin: auto;
@@ -164,14 +191,15 @@
   text-align: center;
 }
 .home-started-text h1 {
-  font-size: 100px;
+  font-size: 85px;
   color: #ffff;
   font-family: Deutschlander;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .home-started-text h3 {
-  font-size: 30px;
+  font-size: 25px;
   color: #ffff;
 }
 .home-started-img {
@@ -181,7 +209,6 @@
 .home-started-img img {
   width: 50%;
   margin: auto;
-  /* margin-top: -90px; */
 }
 
 .home-started-img-main {
@@ -237,7 +264,7 @@
   background-color: transparent;
 }
 
-/* why-chose-us-main */
+/* ============================why-chose-us-main================================= */
 .why-chose-us-main {
   width: 80%;
   margin: auto;
@@ -247,18 +274,23 @@
 }
 
 .why-us-img img {
-  width: 75%;
-  margin-top: 70px;
+  width: 100%;
+  margin-top: 150px;
 }
 .why-us-text {
-  width: 35%;
+  width: 40%;
 }
 .why-us-img {
   width: 25%;
 }
 
-
-/* why-us-card */
+.why-us-text h1{
+    font-size: 85px;
+    color: white;
+    font-family:  Deutschlander;
+    letter-spacing: 2px;
+    line-height: 85px;}
+/* =======================why-us-card =================*/
 .why-us-right-cards {
   width: 30%;
   display: flex;
@@ -272,22 +304,8 @@
 }
 
 
-.why-us-img{
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
-}
-@keyframes floating {
-  from {
-    transform: translate(0, 0px);
+/* @media only screen and (max-width: 2000px) and (min-width: 1300px) {
+  .home-blog-text{
+    padding-left: 189px;
   }
-  65% {
-    transform: translate(0, 15px);
-  }
-  to {
-    transform: translate(0, -0px);
-  }
-}
+} */

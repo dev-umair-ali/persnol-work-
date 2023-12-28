@@ -11,12 +11,14 @@ import letsStart from "../assets/Images/Button-start-now-removebg-preview.png";
 import register from "../assets/Images/Button-register-removebg-preview.png";
 import Rocket from "../assets/Images/ROCKET 3D RENDER.png";
 import Carousel from "../Components/Carousel";
+import BlogCarousel from "../Components/WhyUSCarousel";
+import SlickCarousel from "../Components/SlickCarousel";
+import WhyUSCarousel from "../Components/WhyUSCarousel";
 
 function Home() {
-
-
   return (
     <div className="home-main-page">
+      {/*------------------ home-hero-section----------------*/}
       <div className="home-hero-sec">
         <div className="home-hero-sec-text">
           <h1>
@@ -35,12 +37,14 @@ function Home() {
           <img src={circleastro} alt="" />
         </div>
       </div>
+      {/*------------------ home-hero-section-End---------------*/}
 
       {/* kodiaxe     throwing co */}
 
       <div className="tab-container"></div>
 
-      {/* ABOUT US */}
+
+      {/* -------------------ABOUT US--------------------------*/}
       <div className="Home-about-us-main">
         <div className="home-about-text">
           <h1>ABOUT US</h1>
@@ -60,7 +64,9 @@ function Home() {
           <img src={aboutAstro} alt="" />
         </div>
       </div>
-      {/* RECENT WORK */}
+      {/* -------------------ABOUT US-End-------------------------*/}
+
+      {/* ----------------------------RECENT WORK -----------------------*/}
       <div className="renent-work-main">
         <div className="renent-work-text">
           <h1>RECENT WORK</h1>
@@ -71,12 +77,17 @@ function Home() {
             texts.
           </p>
         </div>
+        <div className="home-recent-carousel">
+          <WhyUSCarousel/>
+        </div>
       </div>
+      {/* ----------------------------RECENT WORK-End-----------------------*/}
 
-      {/* Home-blog-main" */}
+      {/* -------------------------------Home-blog-main"------------- */}
       <div className="Home-blog-main">
         <div className="home-blog-text">
           <h1>BLOG</h1>
+          <h3>Latest From The Blog</h3>
           <p>
             Explore our latest blog post to stay up-to-date with the
             ever-evolving landscape of our industry. Our team of experts has
@@ -87,26 +98,72 @@ function Home() {
           </p>
         </div>
 
-        <div className="home-blog-slider"></div>
+        <div className="home-blog-Carousel">
+          {/* < BlogCarousel/> */}
+          <SlickCarousel />
+        </div>
       </div>
-      {/* WHY YOU CHOOSE US */}
-      <div className="why-chose-us-main">
-      <div className="why-us-text">
-        <h1>WHY YOU CHOOSE US</h1>
-        <h3>Let's Elevate Your Digital Presence Together</h3>
-        <p>
-          {/* Your existing paragraph content */}
-        </p>
-      </div>
-      <div className="why-us-img">
-        <img src={Rocket} alt="" />
-      </div>
-      <div className="why-us-right-cards">
-      <Carousel/>
-      </div>
-    </div>
 
-      {/* Lets Get Started Your Project */}
+      {/*------------------------------- Home-blog-main-End"----------- */}
+      {/*--------------------------- WHY YOU CHOOSE US---------------------------- */}
+      <div className="why-chose-us-main">
+        <div className="why-us-text">
+          <h1>WHY YOU CHOOSE US</h1>
+          <h3 style={{ color: "white", fontSize: "25px" }}>
+            Let's Elevate Your Digital Presence Together
+          </h3>
+          <p
+            style={{
+              fontSize: "16px",
+              padding: "10px 0px",
+              color: "white",
+              letterSpacing: "1px",
+            }}
+          >
+            Ready to take your brand to new heights in the digital realm?
+            Partner with [AimNode Technologies Name] and experience the power of
+            strategic digital marketing. Contact us today for a consultation and
+            let’s embark on a journey towards online success.
+          </p>
+          <div
+            style={{
+              borderBottom: "2px solid #00e5ff",
+              width: "60%",
+            }}
+          ></div>
+          <br />
+          <p
+            style={{
+              fontSize: "16px",
+              padding: "10px 0px",
+              color: "white",
+              letterSpacing: "1px",
+            }}
+          >
+            Remember, it’s not just about services; it’s about creating
+            meaningful connections and fostering brand growth. At [AimNode
+            Technologies Name], we don’t just provide solutions – we create
+            experiences that make a difference.
+          </p>
+        </div>
+        <div className="why-us-img">
+          <img src={Rocket} alt="" />
+        </div>
+        <div className="why-us-right-cards">
+          <Carousel />
+          <div
+            className="for-border"
+            style={{
+              borderBottom: "5px solid #00e5ff",
+              boxShadow: " 0 0 20px rgba(0, 229, 255, 0.7)",
+              marginTop: "-20px",
+            }}
+          ></div>
+        </div>
+      </div>
+      {/*--------------------------- WHY YOU CHOOSE US-End--------------------------- */}
+
+      {/*----------------------- Lets Get Started Your Project ----------------*/}
       <div className="home-started-new">
         <div className="home-started-text">
           <h3>ARE YOU READY FOR</h3>
@@ -136,6 +193,7 @@ function Home() {
           </div>
         </div>
       </div>
+      {/*----------------------- Lets Get Started Your Project-End----------------*/}
 
       <Footer />
     </div>
