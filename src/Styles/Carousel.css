@@ -1,4 +1,3 @@
-
 .slider-img {
   z-index: -1;
   padding: 5px 0px;
@@ -7,68 +6,110 @@
 .Slider-text h1 {
   font-size: 20px;
   color: white;
- 
-
 }
 .Slider-text p {
   font-size: 14px;
   color: white;
   padding: 50px 5px;
 }
+/* .Slide-1 {
+  border: 2px solid #00e5ff;
+  width: 40%;
+  border-radius: 6px;
+  padding: 0px 10px;
+  background-color: #4c5c70;
+} */
+
+
+
 .Slide-1 {
   border: 2px solid #00e5ff;
   width: 40%;
   border-radius: 6px;
   padding: 0px 10px;
   background-color: #4c5c70;
+	position: relative;
 }
+
+/* .Slide-1:before, .Slide-1:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.Slide-1:after {
+	filter: blur(50px);
+} */
+
+
 
 /* the slides */
 .slick-slide {
-    margin: 10px 0px;
-    display: flex;
-    padding-bottom: 40px;
+  margin: 10px 0px;
+  display: flex;
+  padding-bottom: 40px;
 }
 /* the parent */
 .slick-list {
-    margin: auto ;
-    width: 90%;
+  margin: auto;
+  width: 90%;
 }
 .slick-vertical {
-    margin: 0px 0px !important;
-    display: block;
-    height: auto;
+  margin: 0px 0px !important;
+  display: block;
+  height: auto;
 }
 
 .custom-arrow {
-    position: absolute;
-    cursor: pointer;
-    background-color: #333;
-    color: #fff;
-    padding: 8px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .custom-arrow span {
-    font-size: 18px;
-  }
-  
-  .custom-next {
-    right: -88px;
-    bottom: 80px; /* Adjusted to place it above the previous button */
-    background-color: #00e5ff;
-    padding: 0px 20px;
-  }
-  
-  .custom-prev {
-    right: -90px;
-    bottom: 0;
-    background-color: #00e5ff;
-    padding: 0px 20px;
-  }
+  position: absolute;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
 
-  /* .slick-slide{
+.custom-arrow span {
+  font-size: 18px;
+}
+
+.custom-next {
+  right: -88px;
+  bottom: 130px; /* Adjusted to place it above the previous button */
+  background-color: #00e5ff;
+  padding: 15px;
+}
+
+.custom-prev {
+  right: -90px;
+  bottom: 0;
+  background-color: #00e5ff;
+  padding: 0px 20px;
+  padding: 15px;
+}
+
+/* .slick-slide{
     margin: 0 5px;
   } */

@@ -1,0 +1,47 @@
+.Auto-play-slides{
+    position: relative;
+   
+}
+.carousel-content{
+    background-image: url("../assets/Images/tab-screen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    width: 100%;
+}
+.auto-play-img-text{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    padding: 10px 30px;
+    width: 80%;
+}
+
+.auto-play-img-text h1{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+}
+
+.auto-play-img-text p{
+    color: white;
+    font-size: 14px;
+    width: 70%;
+}
+
+
+.auto-play-img {
+    width: 100%;
+    border: none;
+}
+
+.auto-play-img img{
+    width: 100%;
+    margin: 20px auto auto auto;
+    /* margin-top: 20px; */
+
+}
+
+.auto-play-img-text svg{
+    color: yellow;
+}
