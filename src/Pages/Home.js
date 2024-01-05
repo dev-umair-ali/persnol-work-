@@ -14,6 +14,14 @@ import Carousel from "../Components/Carousel";
 import BlogCarousel from "../Components/WhyUSCarousel";
 import SlickCarousel from "../Components/SlickCarousel";
 import WhyUSCarousel from "../Components/WhyUSCarousel";
+import AutoPlayCarousel from "../Components/AutoPlayCarousel";
+import whuUSAstro from "../assets/Images/why-us-astro.png";
+import knowMore from "../assets/Images/know more btn.png";
+import TripleBorderButton from "../Components/Buttons";
+import "../Styles/Buttons.css";
+import ShootingStar from "../Components/ShootingStar";
+import astroCrop from "../assets/Images/why-us-astro-crop.png";
+import WorkFlow from "../Components/WorkFlow";
 
 function Home() {
   return (
@@ -33,16 +41,22 @@ function Home() {
         </div>
         <div className="home-hero-sec-img">
           <CircleAnimation />
-
           <img src={circleastro} alt="" />
         </div>
+        <div className="hero-section-astro">
+          <img src={astroCrop} alt="" />
+        </div>
+        <ShootingStar />
       </div>
+
       {/*------------------ home-hero-section-End---------------*/}
 
-      {/* kodiaxe     throwing co */}
+      {/*--------- kodiaxe     throwing co----------------- */}
+      <div className="tab-main">
+        <WorkFlow />
+      </div>
 
-      <div className="tab-container"></div>
-
+      {/*--------- kodiaxe     throwing co-End---------------- */}
 
       {/* -------------------ABOUT US--------------------------*/}
       <div className="Home-about-us-main">
@@ -59,8 +73,16 @@ function Home() {
             elevate your brand's identity, boost your online visibility, and
             drive meaningful engagement.
           </p>
+
+          <div>
+            <button class="btn-7">
+              <span></span>
+              <span></span>
+              <span></span>Triple Border
+            </button>
+          </div>
         </div>
-        <div className="home-about-img">
+        <div className="home-about-img ">
           <img src={aboutAstro} alt="" />
         </div>
       </div>
@@ -78,12 +100,37 @@ function Home() {
           </p>
         </div>
         <div className="home-recent-carousel">
-          <WhyUSCarousel/>
+          <WhyUSCarousel />
         </div>
       </div>
       {/* ----------------------------RECENT WORK-End-----------------------*/}
 
-      {/* -------------------------------Home-blog-main"------------- */}
+      {/* --------------------------What our client says--------------- */}
+      <div className="home-client-says">
+        <div className="home-client-text">
+          <h1>What our client says</h1>
+          <p>
+            Our customers have consistently praised our products and services,
+            and their feedback speaks volumes. They appreciate the quality,
+            reliability, and personalized support we provide. Here's what one of
+            our satisfied customers had to say: "I couldn't be happier with the
+            results. The product exceeded my expectations, and the customer
+            service was outstanding. I highly recommend Aimnode Technology for
+            anyone looking for top-notch solutions." Your satisfaction is our
+            priority, and we're committed to delivering excellence in every
+            interaction.
+          </p>
+        </div>
+        <div className="what-client-carousel">
+          <AutoPlayCarousel />
+        </div>
+        <div className="what-client-says-astro">
+          <img src={whuUSAstro} alt="" />
+        </div>
+      </div>
+      {/* --------------------------What our client says-End-------------- */}
+
+      {/* -------------------------------Home-blog-main-End------------ */}
       <div className="Home-blog-main">
         <div className="home-blog-text">
           <h1>BLOG</h1>
@@ -103,7 +150,6 @@ function Home() {
           <SlickCarousel />
         </div>
       </div>
-
       {/*------------------------------- Home-blog-main-End"----------- */}
       {/*--------------------------- WHY YOU CHOOSE US---------------------------- */}
       <div className="why-chose-us-main">
@@ -125,12 +171,7 @@ function Home() {
             strategic digital marketing. Contact us today for a consultation and
             let’s embark on a journey towards online success.
           </p>
-          <div
-            style={{
-              borderBottom: "2px solid #00e5ff",
-              width: "60%",
-            }}
-          ></div>
+          <div className="why-chose-border"></div>
           <br />
           <p
             style={{
@@ -147,7 +188,7 @@ function Home() {
           </p>
         </div>
         <div className="why-us-img">
-          <img src={Rocket} alt="" />
+          <img src={Rocket} alt="" className="rocket-img" />
         </div>
         <div className="why-us-right-cards">
           <Carousel />
@@ -159,10 +200,10 @@ function Home() {
               marginTop: "-20px",
             }}
           ></div>
+          <ShootingStar />
         </div>
       </div>
       {/*--------------------------- WHY YOU CHOOSE US-End--------------------------- */}
-
       {/*----------------------- Lets Get Started Your Project ----------------*/}
       <div className="home-started-new">
         <div className="home-started-text">

@@ -11,8 +11,6 @@ function Carousel() {
   const settings = {
 
     dots: false,
-    // centerMode: false,
-    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     vertical: true,

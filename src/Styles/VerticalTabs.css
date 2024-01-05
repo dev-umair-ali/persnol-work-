@@ -1,0 +1,75 @@
+.css-pmcbyn-MuiTabs-root .MuiTabs-scrollButtons {
+  display: none;
+}
+
+.arrow-main-work {
+  position: absolute;
+  bottom: 120px;
+  left: -91px;
+}
+
+.arrow-main-work svg {
+  /* position:absolute; */
+  background-color: aqua;
+  color: white;
+  font-size: 20px;
+  width: 77px;
+  height: 50px;
+}
+
+.arrow-main-work1 {
+  position: absolute;
+  bottom: 20px;
+  left: -91px;
+}
+
+.arrow-main-work1 svg {
+  /* position:absolute; */
+  background-color: aqua;
+  /* bottom: -250px;
+    left: -343px; */
+  color: white;
+  font-size: 20px;
+  width: 77px;
+  height: 50px;
+}
+
+.css-8je8zh-MuiTouchRipple-root {
+  display: none;
+}
+.css-10d9dml-MuiTabs-indicator {
+  display: none;
+}
+
+.css-19kzrtu img {
+  width: 100%;
+}
+.css-19kzrtu {
+  padding: 24px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-content-tabs {
+  width: 70%;
+}
+
+.css-ahj2mt-MuiTypography-root {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.css-5lbw0b-MuiTypography-root {
+  font-size: 20px;
+  color: white;
+}
+
+.small-title {
+  font-size: 18px; /* Adjust the font size for lowercase titles */
+  color: blue; /* Example color, replace with your desired styles */
+}
+
+.capital-title {
+  font-size: 24px; /* Adjust the font size for uppercase titles */
+  color: red; /* Example color, replace with your desired styles */
+}
