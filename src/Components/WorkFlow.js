@@ -4,32 +4,65 @@ import WorkFlowCarousel from "./VerticalTabs";
 import flow1 from "../assets/Images/work-flow1.png";
 import flow2 from "../assets/Images/work-flow2.png";
 import VerticalTabs from "./VerticalTabs";
-// import VerticalTabs2 from "./VerticalTabs2"; // Import VerticalTabs2
-import  VerticalDesignsTabs from "../Components/VerticalDesignsTabs"
+import VerticalDesignsTabs from "../Components/VerticalDesignsTabs";
+import portlogo from "../assets/Images/port-logo.png";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
+
+
+
 
 const WorkFlow = () => {
-  const [showVerticalTabs, setShowVerticalTabs] = useState(null); // Use null for initial state
+  const [showVerticalTabs, setShowVerticalTabs] = useState("VerticalTabs"); // Set default active tab
 
   const handleTabClick = (tabName) => {
-    setShowVerticalTabs(tabName); // Set the appropriate component name
+    setShowVerticalTabs(tabName);
   };
 
   return (
     <div className="workflow">
       <div className="workflow-header">
-        <ul>
-          <li onClick={() => handleTabClick("VerticalTabs")}>Ui-Ux</li>
-          <li>Application</li>
-          <li onClick={() => handleTabClick(" VerticalDesignsTabs")}>Designs</li>
-          <li>Branding</li>
-        </ul>
+        <div className="port-logo">
+          <img src={portlogo} alt="" />
+        </div>
+        <div>
+          <ul>
+            <li
+              className={showVerticalTabs === "VerticalTabs" ? "active" : ""}
+              onClick={() => handleTabClick("VerticalTabs")}
+            >
+              Ui-Ux
+            </li>
+            <li className={showVerticalTabs === "Application" ? "active" : ""}>
+              Application
+            </li>
+            <li
+              className={showVerticalTabs === "VerticalDesignsTabs" ? "active" : ""}
+              onClick={() => handleTabClick("VerticalDesignsTabs")}
+            >
+              Designs
+            </li>
+            <li className={showVerticalTabs === "Branding" ? "active" : ""}>
+              Branding
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="workflow-main">
-        <div className="left-verticall"></div>
+        <div className="left-verticall">
+          <FaFacebookF/>
+          <FaInstagram/>
+          <FaTwitter />
+          <FaLinkedin/>
+        </div>
         <div className="work-flow-center">
           {showVerticalTabs === "VerticalTabs" && <VerticalTabs />}
-          {showVerticalTabs === " VerticalDesignsTabs" && < VerticalDesignsTabs />}
-          <div className="work-flow-all-content"></div>
+          {showVerticalTabs === "VerticalDesignsTabs" && (
+            <VerticalTabs />
+          )}
         </div>
         <div className="right-verticall"></div>
       </div>
