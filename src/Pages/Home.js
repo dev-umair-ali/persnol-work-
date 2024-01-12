@@ -22,6 +22,8 @@ import "../Styles/Buttons.css";
 import ShootingStar from "../Components/ShootingStar";
 import astroCrop from "../assets/Images/why-us-astro-crop.png";
 import WorkFlow from "../Components/WorkFlow";
+import BlackComponent from "../Components/Hologram";
+import Hologram from "../Components/Hologram";
 
 function Home() {
   return (
@@ -87,6 +89,9 @@ function Home() {
         </div>
       </div>
       {/* -------------------ABOUT US-End-------------------------*/}
+      <div style={{widows:"80%", margin:"auto"}}>
+      <Hologram/>
+      </div>
 
       {/* ----------------------------RECENT WORK -----------------------*/}
       <div className="renent-work-main">
