@@ -1,0 +1,160 @@
+.about-us-main {
+  background-image: url("../assets/Images/main-bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500dvh;
+  width: 100%;
+  padding-top: 200px;
+
+}
+
+.about-us-main-text {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.about-us-main-text h1 {
+  font-family: Deutschlander;
+  font-size: 150px;
+  letter-spacing: 1px;
+  color: #ffff;
+  letter-spacing: 2px;
+  line-height: 85px;
+  padding: 10px 0px;
+}
+
+.about-us-main-text p {
+  font-size: 16px;
+  color: #ffff;
+  padding: 20px 0px 10px 0px;
+  width: 70%;
+  margin: auto;
+}
+
+/* ----------.Empowering-main------------- */
+.Empowering-main {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.Empowering-main h1 {
+  font-family: Deutschlander;
+  font-size: 85px;
+  letter-spacing: 1px;
+  color: #ffff;
+  letter-spacing: 2px;
+  line-height: 85px;
+  padding: 10px 0px;
+}
+
+.Empowering-main h3 {
+  font-size: 30px;
+  color: #ffff;
+  font-weight: 500;
+}
+
+.Empowering-main p {
+  font-size: 16px;
+  color: #ffff;
+  padding: 20px 0px 10px 0px;
+  width: 70%;
+  margin: auto;
+}
+
+.Empowering-text img {
+  width: 40%;
+  padding-top: 50px;
+}
+
+.Empowering-text img {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    transform: translate(0, 15px);
+  }
+
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+/* =========our-journey-main"============== */
+.our-journey-main {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.our-journey-tex {
+  width: 50%;
+}
+
+.our-journey-tex h1 {
+  font-family: Deutschlander;
+  font-size: 85px;
+  letter-spacing: 1px;
+  color: #ffff;
+  letter-spacing: 2px;
+  line-height: 85px;
+  padding: 10px 0px;
+}
+
+.our-journey-tex p {
+  font-size: 16px;
+  color: #ffff;
+  padding: 20px 0px 10px 0px;
+}
+
+.our-journey-img {
+  width: 50%;
+}
+
+.our-journey-img img {
+  width: 100%;
+}
+
+.for-b-about {
+  width: 50%;
+  border: 2px solid white;
+}
+
+/* .Our-Team-main */
+.Our-Team-main {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.Our-Team-main h1 {
+  font-family: Deutschlander;
+  font-size: 85px;
+  letter-spacing: 1px;
+  color: #ffff;
+  letter-spacing: 2px;
+  line-height: 85px;
+  padding: 10px 0px;
+}
+
+.Our-Team-main p {
+  font-size: 16px;
+  color: #ffff;
+  padding: 20px 0px 10px 0px;
+  width: 70%;
+  margin: auto;
+}
