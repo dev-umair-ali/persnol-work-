@@ -1,19 +1,18 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
 }
-body{
- color: black;
+
+body {
+  color: black;
 
 }
 
 @font-face {
   font-family: "Deutschlander";
   src: local("Deutschlander"),
-   url("./assets/fonts/FontsFree-Net-Deutschlander.ttf") format("truetype");
+    url("./assets/fonts/FontsFree-Net-Deutschlander.ttf") format("truetype");
   font-weight: bold;
- }
-
- 
+}
