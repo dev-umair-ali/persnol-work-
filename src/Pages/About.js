@@ -1,10 +1,12 @@
 import React from "react";
 import "../Styles/AboutUs.css";
+import "../Styles/Home.css";
 import astro from "../assets/Images/astro-about-us.png";
 import popup from "../assets/Images/pop-up.png";
 import Rocket from "../assets/Images/ROCKET 3D RENDER.png";
 import Carousel from "../Components/Carousel";
-
+import AboutUsCarousel from "../Components/AboutUsCarousel";
+import aboutarrow from "../assets/Images/v-arrow.png";
 function About() {
   return (
     <div className="about-us-main">
@@ -120,7 +122,22 @@ function About() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.{" "}
           </p>
-          <div className="Our-Team-carousel"></div>
+          <div className="Our-Team-carousel">
+            <AboutUsCarousel />
+          </div>
+        </div>
+      </div>
+      {/* ===============achieve your goals============= */}
+      <div className="achieve-goals-main">
+        <div className="achieve-goals-text">
+          <p>We will help you to</p>
+          <h1>achieve your goals</h1>
+          <p>and to grow your business When,</p>
+          <div className="for-about-border"></div>
+          <p>while the lovely valley teems with vapour around me</p>
+        </div>
+        <div className="achieve-goals-img">
+          <img src={aboutarrow} alt="" />
         </div>
       </div>
     </div>
