@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+&.is-expanded {
+    max-height: 100%;
+    overflow: hidden;
+}
 
+.forn-b {
+    max-height: 100%;
+    background-color: #e8f4fc;
+    padding: 20px 0px;
+}
 
 .container {
     min-height: 100%;
@@ -92,7 +101,7 @@
         }
 
         &.is-expanded {
-            max-height: 500px;
+            max-height: 100%;
             overflow: hidden;
 
             p {
