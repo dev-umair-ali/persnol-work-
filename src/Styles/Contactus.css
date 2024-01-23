@@ -1,0 +1,174 @@
+.contact-us-main {
+    background-image: url("../assets/Images/main-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 200px;
+}
+
+.contact-us-top-text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.contact-us-top-text h1 {
+    font-family: Deutschlander;
+    font-size: 150px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+}
+
+
+
+.contact-us-top-text p {
+    font-size: 16px;
+    color: #ffff;
+    padding: 20px 0px 10px 0px;
+    width: 70%;
+    margin: auto;
+}
+
+
+/* ==================get-quote-main============== */
+.get-quote-main {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.get-quote-text {
+    width: 50%;
+    color: #ffff;
+    padding: 0px 20px 0px 0px;
+}
+
+.get-quote-text h1 {
+    font-family: Deutschlander;
+    font-size: 85px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+}
+
+.get-quote-text h3 {
+    font-size: 30px;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.get-quote-text p {
+    font-size: 16px;
+    color: #ffff;
+    padding: 10px 20px 10px 0px;
+}
+
+.get-quote-form {
+    width: 50%;
+}
+
+/* =========aimnode-stations-main============== */
+.aimnode-stations-main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.aimnode-stations-main h1 {
+    font-family: Deutschlander;
+    font-size: 85px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+}
+
+.aimnode-stations-main p {
+    font-size: 16px;
+    color: #ffff;
+    width: 70%;
+    margin: auto;
+}
+
+.aimnode-stations-img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.aimnode-stations-img img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===========================.myForm================== */
+.myForm input::placeholder,
+.myForm textarea::placeholder {
+    color: white;
+}
+
+.myForm textarea {
+    height: 200px;
+}
+
+.myInput {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background-color: #78b2fd18;
+    border: 2px solid #3d8ac8;
+    color: #ffff;
+    outline: none;
+}
+
+.myInput ::placeholder {
+    color: #ffff;
+}
+
+.myButton {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #78b2fd18;
+    border: 2px solid #3d8ac8;
+}
+
+.inputContainer1 {
+    display: flex;
+    gap: 20px;
+    color: #ffff;
+}
+
+
+.inputContainer2 {
+    display: flex;
+    gap: 20px;
+    color: #ffff;
+
+}
+
+/* ===========================.myForm================== */

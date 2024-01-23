@@ -5,8 +5,6 @@
   background-size: cover;
   width: 100%;
   padding-top: 200px;
-  height: 1000dvh;
-
 }
 
 .about-us-main-text {
@@ -155,7 +153,7 @@
 .Our-Team-main p {
   font-size: 16px;
   color: #ffff;
-  padding: 20px 0px 10px 0px;
+  padding: 10px 0px 80px 0px;
   width: 70%;
   margin: auto;
 }
