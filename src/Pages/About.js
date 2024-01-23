@@ -7,6 +7,12 @@ import Rocket from "../assets/Images/ROCKET 3D RENDER.png";
 import Carousel from "../Components/Carousel";
 import AboutUsCarousel from "../Components/AboutUsCarousel";
 import aboutarrow from "../assets/Images/v-arrow.png";
+import Started from "../assets/Images/p.png";
+import getoff from "../assets/Images/get-off-btn-removebg-preview.png";
+import letsStart from "../assets/Images/Button-start-now-removebg-preview.png";
+import register from "../assets/Images/Button-register-removebg-preview.png";
+import Footer from "../Components/Footer";
+
 function About() {
   return (
     <div className="about-us-main">
@@ -140,6 +146,38 @@ function About() {
           <img src={aboutarrow} alt="" />
         </div>
       </div>
+      {/*----------------------- Lets Get Started Your Project ----------------*/}
+      <div className="home-started-new">
+        <div className="home-started-text">
+          <h3>ARE YOU READY FOR</h3>
+          <h1>Lets Get Started Your Project</h1>
+        </div>
+        <div className="home-started-img-main">
+          <div className="home-btn1">
+            <button>
+              <img src={getoff} alt="Button 1" />
+            </button>
+          </div>
+          <div></div>
+
+          <div className="home-started-img">
+            <img src={Started} alt="" />
+          </div>
+
+          <div className="home-btn-2">
+            <button>
+              <img src={register} alt="Button 2" />
+            </button>
+          </div>
+          <div className="home-btn-3">
+            <button>
+              <img src={letsStart} alt="Button 3" />
+            </button>
+          </div>
+        </div>
+      </div>
+      {/*----------------------- Lets Get Started Your Project-End----------------*/}
+      <Footer />
     </div>
   );
 }

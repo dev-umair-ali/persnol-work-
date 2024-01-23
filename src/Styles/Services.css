@@ -1,0 +1,120 @@
+.services-main {
+    background-image: url("../assets/Images/main-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 200px;
+    height: 1000dvh;
+}
+
+.services-top-text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.services-top-text h1 {
+    font-family: Deutschlander;
+    font-size: 150px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+
+
+.services-top-text p {
+    font-size: 16px;
+    color: #ffff;
+    padding: 20px 0px 10px 0px;
+    width: 70%;
+    margin: auto;
+}
+
+/* ==================.services-hero--============ */
+.services-hero-main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.services-Hero-text {
+    color: #ffff;
+    width: 50%
+}
+
+
+.services-Hero-text h1 {
+    font-family: Deutschlander;
+    font-size: 85px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.services-Hero-text p {
+    font-size: 16px;
+    color: #ffff;
+    padding: 10px 20px 10px 0px;
+}
+
+.services-Hero-boxes {
+    width: 35%;
+
+}
+
+.box-wraper {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.box-wraper2 {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin: auto;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.h-box {
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    padding: 70px 10px;
+    background: linear-gradient(to right, #46CDFB, #1F9BF4, #1187F1);
+}
+
+.h-box img {
+    width: 20%;
+}
+
+
+.h-box p {
+    font-size: 16px;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.hero-box4 {
+    margin-top: -30px;
+}
+
+.hero-box2 {
+    margin-top: -30px;
+}

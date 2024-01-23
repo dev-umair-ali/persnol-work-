@@ -9,15 +9,13 @@ import "../Styles/Carousel.css";
 
 function Carousel() {
   const settings = {
-
     dots: false,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
     nextArrow: <CustomArrow direction="next" />,
     prevArrow: <CustomArrow direction="prev" />,
- 
   };
   return (
     <div>
@@ -107,18 +105,10 @@ function Carousel() {
 
 export default Carousel;
 
-
-
-
-
 const CustomArrow = ({ onClick, direction }) => {
-    return (
-      <div
-        className={`custom-arrow custom-${direction}`}
-        onClick={onClick}
-      >
-        {direction === 'next' ? <span>&gt;</span> : <span>&lt;</span>}
-      </div>
-    );
-  };
-  
+  return (
+    <div className={`custom-arrow custom-${direction}`} onClick={onClick}>
+      {direction === "next" ? <span>&gt;</span> : <span>&lt;</span>}
+    </div>
+  );
+};
