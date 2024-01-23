@@ -19,7 +19,7 @@ const Accordion = ({ title, expand, onClick, content, backgroundImage }) => {
         {title}
       </dt>
       <dd
-        className={expand ? "content is-expanded" : "content"}
+        className={expand ? "content is-expanded " : "content"}
         onClick={onClick}
       >
         {content.map((item, index) => (
@@ -62,7 +62,7 @@ const ServicesAccordion = () => {
       title: "First Accordion",
       content: [
         {
-          image: accordion1, // replace with the actual URL or path
+          image: accordion1,
           text: "Content 1 for First Accordion",
         },
         {
@@ -74,7 +74,7 @@ const ServicesAccordion = () => {
           text: "Content 3 for First Accordion",
         },
       ],
-      backgroundImage: ac1, // replace with the actual URL or path
+      backgroundImage: ac1,
     },
     {
       title: "Second Accordion",
@@ -92,7 +92,7 @@ const ServicesAccordion = () => {
           text: "Content 3 for Second Accordion",
         },
       ],
-      backgroundImage: ac2, // replace with the actual URL or path
+      backgroundImage: ac2,
     },
     {
       title: "Third Accordion",
@@ -110,7 +110,7 @@ const ServicesAccordion = () => {
           text: "Content 3 for Third Accordion",
         },
       ],
-      backgroundImage: ac3, // replace with the actual URL or path
+      backgroundImage: ac3,
     },
     {
       title: "Third Accordion",
@@ -128,19 +128,19 @@ const ServicesAccordion = () => {
           text: "Content 3 for Third Accordion",
         },
       ],
-      backgroundImage: ac4, // replace with the actual URL or path
+      backgroundImage: ac4,
     },
   ];
 
   return (
     <div className="container">
-      <h1>React Accordion</h1>
+      {/* <h1>React Accordion</h1>
       <button type="button" className="btn" onClick={toggleExpand(true)}>
         Expand All
       </button>
       <button type="button" className="btn" onClick={toggleExpand()}>
         Collapse All
-      </button>
+      </button> */}
       <dl className="accordion">
         {accordionList.map((item, index) => (
           <Accordion
