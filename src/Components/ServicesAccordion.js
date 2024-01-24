@@ -19,61 +19,63 @@ const Accordion = ({
 }) => {
   return (
     <div className="">
-      <dt
-        className={expand ? "title is-expanded" : "title"}
-        onClick={onClick}
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
-        {title}
-      </dt>
-      <dd
-        className={expand ? "content is-expanded " : "content"}
-        onClick={onClick}
-      >
-        {content.length > 0 && (
-          <div className="accordion-item">
-            {/*========== <div className="custom-div-1"> ===============*/}
-            <div className="custom-div-1">
-              <div className="accordion-text">
-                <h1>{content[0].div1.text}</h1>
-                <h3>{title2}</h3>
-                <div className="accrodion-whiteline"></div>
-                <p>{description}</p>
+      <div className="for-hole-b">
+        <dt
+          className={expand ? "title is-expanded" : "title"}
+          onClick={onClick}
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
+          {title}
+        </dt>
+        <dd
+          className={expand ? "content is-expanded " : "content"}
+          onClick={onClick}
+        >
+          {content.length > 0 && (
+            <div className="accordion-item">
+              {/*========== <div className="custom-div-1"> ===============*/}
+              <div className="custom-div-1">
+                <div className="accordion-text">
+                  <h1>{content[0].div1.text}</h1>
+                  <h3>{title2}</h3>
+                  <div className="accrodion-whiteline"></div>
+                  <p>{description}</p>
+                </div>
+                <div className="accordion-imgs">
+                  {" "}
+                  <img src={content[0].div1.image} alt={`Image - Div 1`} />
+                </div>
               </div>
-              <div className="accordion-imgs">
-                {" "}
-                <img src={content[0].div1.image} alt={`Image - Div 1`} />
-              </div>
-            </div>
-            {/*========== <div className="custom-div-2"> ===============*/}
+              {/*========== <div className="custom-div-2"> ===============*/}
 
-            <div className="custom-div-2">
-              <div className="accordion-imgs">
-                <img src={content[0].div2.image} alt={`Image - Div 2`} />
+              <div className="custom-div-2">
+                <div className="accordion-imgs">
+                  <img src={content[0].div2.image} alt={`Image - Div 2`} />
+                </div>
+                <div className="accordion-text">
+                  <h1>{content[0].div2.text}</h1>
+                  <h3>{title2}</h3>
+                  <div className="accrodion-whiteline"></div>
+                  <p>{description}</p>
+                </div>
               </div>
-              <div className="accordion-text">
-                <h1>{content[0].div2.text}</h1>
-                <h3>{title2}</h3>
-                <div className="accrodion-whiteline"></div>
-                <p>{description}</p>
-              </div>
-            </div>
-            {/*========== <div className="custom-div-3"> ===============*/}
+              {/*========== <div className="custom-div-3"> ===============*/}
 
-            <div className="custom-div-3">
-              <div className="accordion-text">
-                <h1>{content[0].div3.text}</h1>
-                <h3>{title2}</h3>
-                <div className="accrodion-whiteline"></div>
-                <p>{description}</p>
-              </div>
-              <div className="accordion-imgs">
-                <img src={content[0].div3.image} alt={`Image - Div 3`} />
+              <div className="custom-div-3">
+                <div className="accordion-text">
+                  <h1>{content[0].div3.text}</h1>
+                  <h3>{title2}</h3>
+                  <div className="accrodion-whiteline"></div>
+                  <p>{description}</p>
+                </div>
+                <div className="accordion-imgs">
+                  <img src={content[0].div3.image} alt={`Image - Div 3`} />
+                </div>
               </div>
             </div>
-          </div>
-        )}
-      </dd>
+          )}
+        </dd>
+      </div>
     </div>
   );
 };
@@ -104,7 +106,7 @@ const ServicesAccordion = () => {
 
   const accordionList = [
     {
-      title: "First Accordion",
+      title: "Application",
       title2: "Empowering Your Business with Dynamic Web designs",
       description:
         "Explore our latest blog post to stay up-to-date with the ever-evolving landscape of our industry. Our team of experts has distilled their knowledge into this concise and informative read, ensuring you're well-prepared to navigate the challenges and opportunities ahead. Don't miss out – click the link and delve into the insights that matter most for your success.",
@@ -127,7 +129,7 @@ const ServicesAccordion = () => {
       backgroundImage: ac1,
     },
     {
-      title: "Website development",
+      title: "Design",
       title2: "Empowering Your Business with Dynamic Website Developments",
       description:
         "The process of creating and managing websites is referred to as website development, or just web development. It includes a variety of activities, including creating the site’s user interface and layout as well as coding and programming its functioning. Front-end and back-end development are the two primary subsets of web development.",
@@ -150,7 +152,7 @@ const ServicesAccordion = () => {
       backgroundImage: ac2,
     },
     {
-      title: "Third Accordion",
+      title: "Branding",
       title2: "Additional Title for Third Accordion",
       description: "Additional Description for Third Accordion",
       content: [
