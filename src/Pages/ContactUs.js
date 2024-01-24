@@ -7,6 +7,7 @@ import getoff from "../assets/Images/get-off-btn-removebg-preview.png";
 import letsStart from "../assets/Images/Button-start-now-removebg-preview.png";
 import register from "../assets/Images/Button-register-removebg-preview.png";
 import Footer from "../Components/Footer";
+import "../Styles/Home.css";
 
 function ContactUs() {
   return (

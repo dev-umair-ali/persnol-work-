@@ -3,12 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Flyar from "../assets/Images/Flyar.png";
-import "../Styles/WhyUSCarousel.css"
-import recen1 from "../assets/Images/recent-1.jpg"
-import recen2 from "../assets/Images/recent-2.png"
-import recen3 from "../assets/Images/recent-3.png"
-import recen4 from "../assets/Images/recent-4.jpg"
-import recen5 from "../assets/Images/recent-5.jpg"
+import "../Styles/WhyUSCarousel.css";
 
 function WhyUSCarousel() {
   const settings = {
@@ -25,95 +20,85 @@ function WhyUSCarousel() {
   return (
     <div className="recent">
       <Slider {...settings}>
-      <div className="recent-slide-main">
-      <div className="recent-img-main window">
-        <img src={recen1} alt="" />
-      </div>
-    </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen2 } alt="" />
+        <div className="recent-slide-main">
+          <div className="recent-img-main window">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706100363/recent-2_zu8xwd.png"
+              alt=""
+            />
+          </div>
         </div>
+        <div className="recent-slide-main">
+          <div className="recent-img-main">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706099873/recent-5_vx301z.jpg"
+              alt=""
+            />
+          </div>
         </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen3} alt="" />
+        <div className="recent-slide-main">
+          <div className="recent-img-main">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706099855/recent-3_dmg7oq.png"
+              alt=""
+            />
+          </div>
         </div>
+        <div className="recent-slide-main">
+          <div className="recent-img-main">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706099847/recent-1_fmxdi0.jpg"
+              alt=""
+            />
+          </div>
         </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen4} alt="" />
+        <div className="recent-slide-main">
+          <div className="recent-img-main">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706099711/recent-4_xatacb.jpg"
+              alt=""
+            />
+          </div>
         </div>
+        <div className="recent-slide-main">
+          <div className="recent-img-main window">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706100363/recent-2_zu8xwd.png"
+              alt=""
+            />
+          </div>
         </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen5} alt="" />
+        <div className="recent-slide-main">
+          <div className="recent-img-main">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706099873/recent-5_vx301z.jpg"
+              alt=""
+            />
+          </div>
         </div>
+        <div className="recent-slide-main">
+          <div className="recent-img-main">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706099855/recent-3_dmg7oq.png"
+              alt=""
+            />
+          </div>
         </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen1} alt="" />
+        <div className="recent-slide-main">
+          <div className="recent-img-main">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706099847/recent-1_fmxdi0.jpg"
+              alt=""
+            />
+          </div>
         </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen2} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen3} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen4} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen5} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen1} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen2} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen1} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen3} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen5} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen4} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen2} alt="" />
-        </div>
-        </div>
-        <div className="recent-slide-main" > 
-        <div className="recent-img-main">            
-          <img src={ recen1} alt="" />
-        </div>
+        <div className="recent-slide-main">
+          <div className="recent-img-main">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706099711/recent-4_xatacb.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </Slider>
     </div>
@@ -122,17 +107,12 @@ function WhyUSCarousel() {
 
 export default WhyUSCarousel;
 
-
-
 const WhyUsArrows = ({ onClick, direction }) => {
   const arrowClass = `why-us-arrows why-us-${direction}`;
 
   return (
-    <div
-      className={arrowClass}
-      onClick={onClick}
-    >
-      {direction === 'next' ? <span>&gt;</span> : <span>&lt;</span>}
+    <div className={arrowClass} onClick={onClick}>
+      {direction === "next" ? <span>&gt;</span> : <span>&lt;</span>}
     </div>
   );
 };

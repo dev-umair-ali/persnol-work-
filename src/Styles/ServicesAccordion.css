@@ -11,13 +11,9 @@
 .container {
     min-height: 100%;
     padding: 30px;
-    font-family: 'PT Sans';
     text-align: center;
 
-    /* h1 {
-        text-align: center;
-        color: #1569a8;
-    } */
+
 
     .btn {
         display: inline-block;
@@ -45,20 +41,23 @@
     width: 100%;
 
     .title {
-        padding: 50px 30px;
+        padding: 20px 20px;
         cursor: pointer;
         transform: translate3d(0, 0, 0);
         color: white;
         position: relative;
-        font-size: 20px;
+        font-size: 30px;
+        font-weight: 600;
         background: #1569a8;
         margin-bottom: -1px;
         border-bottom: 1px solid #0e4671;
         text-align: left;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        border-radius: 6px;
+        text-transform: uppercase;
 
         &::after {
             content: "+";
@@ -68,11 +67,13 @@
             position: absolute;
             right: 30px;
             font-family: monospace;
+
         }
 
         &.is-expanded {
             transition: background .5s;
             background: #0e4671;
+            border-radius: 14px;
 
             &::after {
                 content: "-";
@@ -84,7 +85,7 @@
     .content {
         overflow: hidden;
         max-height: 0;
-        transition: max-height .5s;
+        transition: max-height .5s, padding .5s, opacity .5s;
         margin: 0;
         padding: 0 30px;
         border-top: 0;
@@ -98,9 +99,15 @@
         }
 
         &.is-expanded {
-            max-height: 100%;
+            max-height: 1100px;
             overflow: hidden;
-            border: 2px solid red;
+            padding: 20px 30px;
+            opacity: 1;
+            background-color: #46cefb3a;
+            margin-bottom: 10px;
+            margin-top: -50px;
+            border-radius: 10px;
+            border: 2px solid #46CDFB;
 
             p {
                 opacity: 1;
@@ -129,7 +136,7 @@
 .custom-div-1 {
     display: flex;
     align-items: center;
-    padding: 20px 0px;
+    padding: 0px 0px 20px 0px;
 
 }
 
@@ -171,8 +178,7 @@
 
 .accordion-imgs img {
     width: 100%;
-    border-image: 2px solid linear-gradient(to right, #46CDFB, #1F9BF4, #1187F1);
-    ;
+    border: 2px solid #46CDFB;
     border-radius: 10px;
 }
 
@@ -217,8 +223,4 @@
     padding: 10px 0px;
     text-transform: uppercase;
     display: inline-block;
-}
-
-.accordion-main-border {
-    border: 2px solid red;
 }
