@@ -5,6 +5,7 @@ import box2 from "../assets/Images/box2.png";
 import box3 from "../assets/Images/box3.png";
 import box4 from "../assets/Images/box4.png";
 import ServicesAccordion from "../Components/ServicesAccordion";
+import Footer from "../Components/Footer";
 
 function Services() {
   return (
@@ -55,7 +56,11 @@ function Services() {
           </div>
         </div>
       </div>
-      <ServicesAccordion />
+      <div className="services-acro">
+        <ServicesAccordion />
+      </div>
+
+      <Footer />
     </div>
   );
 }
