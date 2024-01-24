@@ -5,7 +5,7 @@
     background-size: cover;
     width: 100%;
     padding-top: 200px;
-    height: 1000dvh;
+
 }
 
 .services-top-text {
@@ -117,4 +117,10 @@
 
 .hero-box2 {
     margin-top: -30px;
+}
+
+/* .services-acro */
+.services-acro {
+    width: 80%;
+    margin: auto
 }

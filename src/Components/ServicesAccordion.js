@@ -8,9 +8,17 @@ import accordion1 from "../assets/Images/accorion1  (1).png";
 import accordion2 from "../assets/Images/accorion2  (2).png";
 import accordion3 from "../assets/Images/accorion3 (3).png";
 
-const Accordion = ({ title, expand, onClick, content, backgroundImage }) => {
+const Accordion = ({
+  title,
+  title2,
+  description,
+  expand,
+  onClick,
+  content,
+  backgroundImage,
+}) => {
   return (
-    <div>
+    <div className="">
       <dt
         className={expand ? "title is-expanded" : "title"}
         onClick={onClick}
@@ -22,12 +30,49 @@ const Accordion = ({ title, expand, onClick, content, backgroundImage }) => {
         className={expand ? "content is-expanded " : "content"}
         onClick={onClick}
       >
-        {content.map((item, index) => (
-          <div key={index} className="accordion-item">
-            <img src={item.image} alt={`Image ${index}`} />
-            <p>{item.text}</p>
+        {content.length > 0 && (
+          <div className="accordion-item">
+            {/*========== <div className="custom-div-1"> ===============*/}
+            <div className="custom-div-1">
+              <div className="accordion-text">
+                <h1>{content[0].div1.text}</h1>
+                <h3>{title2}</h3>
+                <div className="accrodion-whiteline"></div>
+                <p>{description}</p>
+              </div>
+              <div className="accordion-imgs">
+                {" "}
+                <img src={content[0].div1.image} alt={`Image - Div 1`} />
+              </div>
+            </div>
+            {/*========== <div className="custom-div-2"> ===============*/}
+
+            <div className="custom-div-2">
+              <div className="accordion-imgs">
+                <img src={content[0].div2.image} alt={`Image - Div 2`} />
+              </div>
+              <div className="accordion-text">
+                <h1>{content[0].div2.text}</h1>
+                <h3>{title2}</h3>
+                <div className="accrodion-whiteline"></div>
+                <p>{description}</p>
+              </div>
+            </div>
+            {/*========== <div className="custom-div-3"> ===============*/}
+
+            <div className="custom-div-3">
+              <div className="accordion-text">
+                <h1>{content[0].div3.text}</h1>
+                <h3>{title2}</h3>
+                <div className="accrodion-whiteline"></div>
+                <p>{description}</p>
+              </div>
+              <div className="accordion-imgs">
+                <img src={content[0].div3.image} alt={`Image - Div 3`} />
+              </div>
+            </div>
           </div>
-        ))}
+        )}
       </dd>
     </div>
   );
@@ -60,76 +105,73 @@ const ServicesAccordion = () => {
   const accordionList = [
     {
       title: "First Accordion",
+      title2: "Empowering Your Business with Dynamic Web designs",
+      description:
+        "Explore our latest blog post to stay up-to-date with the ever-evolving landscape of our industry. Our team of experts has distilled their knowledge into this concise and informative read, ensuring you're well-prepared to navigate the challenges and opportunities ahead. Don't miss out – click the link and delve into the insights that matter most for your success.",
       content: [
         {
-          image: accordion1,
-          text: "Content 1 for First Accordion",
-        },
-        {
-          image: accordion2,
-          text: "Content 2 for First Accordion",
-        },
-        {
-          image: accordion3,
-          text: "Content 3 for First Accordion",
+          div1: {
+            image: accordion1,
+            text: "Web design",
+          },
+          div2: {
+            image: accordion2,
+            text: "Website development",
+          },
+          div3: {
+            image: accordion3,
+            text: "Speed Optimization",
+          },
         },
       ],
       backgroundImage: ac1,
     },
     {
-      title: "Second Accordion",
+      title: "Website development",
+      title2: "Empowering Your Business with Dynamic Website Developments",
+      description:
+        "The process of creating and managing websites is referred to as website development, or just web development. It includes a variety of activities, including creating the site’s user interface and layout as well as coding and programming its functioning. Front-end and back-end development are the two primary subsets of web development.",
       content: [
         {
-          image: "url_to_image2_1.jpg",
-          text: "Content 1 for Second Accordion",
-        },
-        {
-          image: "url_to_image2_2.jpg",
-          text: "Content 2 for Second Accordion",
-        },
-        {
-          image: "url_to_image2_3.jpg",
-          text: "Content 3 for Second Accordion",
+          div1: {
+            image: accordion1,
+            text: "Speed Optimization",
+          },
+          div2: {
+            image: accordion2,
+            text: "Content 2 for Second Accordion - Div 2",
+          },
+          div3: {
+            image: accordion3,
+            text: "Speed Optimization",
+          },
         },
       ],
       backgroundImage: ac2,
     },
     {
       title: "Third Accordion",
+      title2: "Additional Title for Third Accordion",
+      description: "Additional Description for Third Accordion",
       content: [
         {
-          image: "url_to_image3_1.jpg",
-          text: "Content 1 for Third Accordion",
-        },
-        {
-          image: "url_to_image3_2.jpg",
-          text: "Content 2 for Third Accordion",
-        },
-        {
-          image: "url_to_image3_3.jpg",
-          text: "Content 3 for Third Accordion",
+          div1: {
+            image: accordion1,
+            text: "Speed Optimization",
+          },
+          div2: {
+            image: accordion1,
+            text: "Speed Optimization",
+          },
+          div3: {
+            image: accordion1,
+            text: "Speed Optimization",
+          },
         },
       ],
       backgroundImage: ac3,
     },
-    {
-      title: "Third Accordion",
-      content: [
-        {
-          image: "url_to_image3_1.jpg",
-          text: "Content 1 for Third Accordion",
-        },
-        {
-          image: "url_to_image3_2.jpg",
-          text: "Content 2 for Third Accordion",
-        },
-        {
-          image: "url_to_image3_3.jpg",
-          text: "Content 3 for Third Accordion",
-        },
-      ],
-      backgroundImage: ac4,
-    },
+    // ... (other accordion items)
   ];
 
   return (
@@ -146,6 +188,8 @@ const ServicesAccordion = () => {
           <Accordion
             key={index}
             title={item.title}
+            title2={item.title2} // Add this line
+            description={item.description} // Add this line
             onClick={toggle(index + 1)}
             expand={accordionState[`block${index + 1}`]}
             content={item.content}
