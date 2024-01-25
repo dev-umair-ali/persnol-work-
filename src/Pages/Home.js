@@ -1,28 +1,20 @@
 import React from "react";
 import "../Styles/Home.css";
-import aboutAstro from "../assets/Images/astro-about-us.png";
-import SwiperSlider from "../Components/CircleSlider";
 import CircleAnimation from "../Components/CircleSlider";
-import circleastro from "../assets/Images/circle-astro.png";
 import Footer from "../Components/Footer";
-import Started from "../assets/Images/p.png";
 import getoff from "../assets/Images/get-off-btn-removebg-preview.png";
 import letsStart from "../assets/Images/Button-start-now-removebg-preview.png";
 import register from "../assets/Images/Button-register-removebg-preview.png";
-import Rocket from "../assets/Images/ROCKET 3D RENDER.png";
 import Carousel from "../Components/Carousel";
-import BlogCarousel from "../Components/WhyUSCarousel";
+// import BlogCarousel from "../Components/WhyUSCarousel";
 import SlickCarousel from "../Components/SlickCarousel";
 import WhyUSCarousel from "../Components/WhyUSCarousel";
 import AutoPlayCarousel from "../Components/AutoPlayCarousel";
-import whuUSAstro from "../assets/Images/why-us-astro.png";
-import knowMore from "../assets/Images/know more btn.png";
-import TripleBorderButton from "../Components/Buttons";
+// import TripleBorderButton from "../Components/Buttons";
 import "../Styles/Buttons.css";
 import ShootingStar from "../Components/ShootingStar";
-import astroCrop from "../assets/Images/why-us-astro-crop.png";
 import WorkFlow from "../Components/WorkFlow";
-import BlackComponent from "../Components/Hologram";
+// import BlackComponent from "../Components/Hologram";
 import Hologram from "../Components/Hologram";
 
 function Home() {
@@ -43,10 +35,16 @@ function Home() {
         </div>
         <div className="home-hero-sec-img">
           <CircleAnimation />
-          <img src={circleastro} alt="" />
+          <img
+            src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706112234/circle-astro_klrlal.png"
+            alt=""
+          />
         </div>
         <div className="hero-section-astro">
-          <img src={astroCrop} alt="" />
+          <img
+            src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706113225/why-us-astro-crop_scx8ni.png"
+            alt=""
+          />
         </div>
         <ShootingStar />
       </div>
@@ -85,12 +83,15 @@ function Home() {
           </div>
         </div>
         <div className="home-about-img ">
-          <img src={aboutAstro} alt="" />
+          <img
+            src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706112346/astro-about-us_ydhcl5.png"
+            alt=""
+          />
         </div>
       </div>
       {/* -------------------ABOUT US-End-------------------------*/}
-      <div style={{widows:"80%", margin:"auto"}}>
-      <Hologram/>
+      <div style={{ widows: "80%", margin: "auto" }}>
+        <Hologram />
       </div>
 
       {/* ----------------------------RECENT WORK -----------------------*/}
@@ -130,7 +131,10 @@ function Home() {
           <AutoPlayCarousel />
         </div>
         <div className="what-client-says-astro">
-          <img src={whuUSAstro} alt="" />
+          <img
+            src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706113224/why-us-astro_ptg33f.png"
+            alt=""
+          />
         </div>
       </div>
       {/* --------------------------What our client says-End-------------- */}
@@ -193,7 +197,11 @@ function Home() {
           </p>
         </div>
         <div className="why-us-img">
-          <img src={Rocket} alt="" className="rocket-img" />
+          <img
+            src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706113224/ROCKET_3D_RENDER_zep9jl.png"
+            alt=""
+            className="rocket-img"
+          />
         </div>
         <div className="why-us-right-cards">
           <Carousel />
@@ -205,7 +213,6 @@ function Home() {
               marginTop: "-20px",
             }}
           ></div>
-          <ShootingStar />
         </div>
       </div>
       {/*--------------------------- WHY YOU CHOOSE US-End--------------------------- */}
@@ -224,7 +231,10 @@ function Home() {
           <div></div>
 
           <div className="home-started-img">
-            <img src={Started} alt="" />
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706113475/p_g3rjaw.png"
+              alt=""
+            />
           </div>
 
           <div className="home-btn-2">
