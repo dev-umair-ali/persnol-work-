@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.projects-main {
+    background-image: url("../assets/Images/main-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 200px;
+}
+
+.projects-top-text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.projects-top-text h1 {
+    font-family: Deutschlander;
+    font-size: 150px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+
+
+.projects-top-text p {
+    font-size: 16px;
+    color: #ffff;
+    padding: 20px 0px 10px 0px;
+    width: 70%;
+    margin: auto;
+}
+
+
+/* =============project-hero-sec============== */
+.hero-project-b {
+    width: 60%;
+    border: 1px solid white;
+}
+
+.project-hero-sec {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.project-hero-text {
+    /* padding: 0px 40px 0px 0px; */
+    width: 50%;
+}
+
+.project-hero-img {
+    display: flex;
+    justify-content: end;
+}
+
+.project-hero-img img {
+    width: 90%;
+}
+
+.project-hero-text h1 {
+    font-family: Deutschlander;
+    font-size: 85px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.project-hero-text p {
+    font-size: 16px;
+    color: #ffff;
+    margin: auto;
+    padding-top: 20px;
+}
+
+
+/* Projects-Acco */
+.Projects-Acco {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}

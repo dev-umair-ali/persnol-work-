@@ -18,7 +18,14 @@ const Accordion = ({
   backgroundImage,
 }) => {
   return (
-    <div className="">
+    <div
+      className=""
+      style={{
+        border: "5px solid #2389b0",
+        borderRadius: "10px",
+        marginBottom: "40px",
+      }}
+    >
       <div className="for-hole-b">
         <dt
           className={expand ? "title is-expanded" : "title"}
