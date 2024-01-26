@@ -10,6 +10,7 @@
   justify-content: space-between;
   padding: 80px 30px 10px 30px;
 }
+
 .footer-main1 {
   width: 80%;
   margin: auto;
@@ -30,18 +31,22 @@
   font-family: "Poppins";
   padding-top: 50px;
 }
+
 .footer-logo {
   width: 25%;
 }
+
 .footer-logo img {
   padding-bottom: 30px;
   width: 60%;
 }
+
 .footer-logo p {
   font-size: 16px;
   color: #ffff;
   padding: 0px 20px 0px 0px;
 }
+
 .for-bottom-border {
   border-bottom: 3px solid #4ac4dd;
   width: 82%;
@@ -67,6 +72,7 @@
 .fotter-bottem-text {
   text-align: center;
 }
+
 .fotter-bottem-text p {
   color: #ffff;
   font-size: 18px;
@@ -89,10 +95,11 @@
   color: #fff;
 }
 
-.footer-mail-box input::placeholder{
-color: #ffff;
+.footer-mail-box input::placeholder {
+  color: #ffff;
 }
-.footer-mail-box button{
+
+.footer-mail-box button {
   padding: 8px 15px;
   background-color: #00e5ff;
   border: 2px solid #00e5ff;
@@ -102,13 +109,41 @@ color: #ffff;
   cursor: pointer;
 }
 
-.footer-mail-box svg{
+.footer-mail-box svg {
   color: #fff;
   font-size: 16px;
 }
 
-.footer-mail-box{
-display: flex;
-justify-content: center;
-width: 100%;
+.footer-mail-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    padding: 40px 30px 10px 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 90%;
+    margin: auto;
+  }
+
+  .footer-main1 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .for-bottom-border {
+    width: 50%;
+    margin: auto;
+  }
+
+  .footer-main ul li {
+    justify-content: center;
+  }
+
 }

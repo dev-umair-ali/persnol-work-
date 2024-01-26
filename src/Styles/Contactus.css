@@ -172,3 +172,69 @@
 }
 
 /* ===========================.myForm================== */
+
+
+@media (max-width: 768px) {
+    .contact-us-main {
+        padding-top: 130px;
+    }
+
+    .contact-us-top-text h1 {
+        font-size: 100px;
+    }
+
+    .get-quote-text h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .get-quote-text h3 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .contact-us-top-text {
+        width: 90%;
+        padding: 0px 0px;
+    }
+
+    .contact-us-top-text p {
+        width: 90%;
+    }
+
+    .get-quote-main {
+        width: 90%;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .get-quote-text {
+        width: 90%;
+        padding: 0px 1px 0px 0px;
+    }
+
+    .get-quote-text p {
+        font-size: 16px;
+        color: #ffff;
+        padding: 0px;
+    }
+
+    .get-quote-form {
+        width: 100%;
+        margin: auto;
+        padding-top: 40px;
+    }
+
+    .aimnode-stations-main h1 {
+        font-size: 60px;
+    }
+
+    .aimnode-stations-main {
+        width: 90%;
+        padding-top: 60px;
+    }
+
+    .aimnode-stations-main p {
+        width: 90%;
+    }
+}
