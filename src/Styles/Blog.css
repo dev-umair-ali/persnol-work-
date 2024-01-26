@@ -1,0 +1,43 @@
+.blogs-us-main {
+    background-image: url("../assets/Images/main-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 200px;
+}
+
+.blogs-us-top-text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.blogs-us-top-text h1 {
+    font-family: Deutschlander;
+    font-size: 150px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+}
+
+
+
+.blogs-us-top-text p {
+    font-size: 16px;
+    color: #ffff;
+    padding: 20px 0px 10px 0px;
+    width: 70%;
+    margin: auto;
+}
+
+
+/* ========blog-card-main ========*/
+.blog-card-main {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 40px;
+}
