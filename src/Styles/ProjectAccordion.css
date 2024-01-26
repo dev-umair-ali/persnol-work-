@@ -228,3 +228,64 @@ body {
     border-radius: 10px;
     padding: 10px 0px;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .accordion .content.is-expanded {
+        max-height: 100%;
+        overflow: hidden;
+        padding: 0px 10px;
+        opacity: 1;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .project-accordion-main-inner {
+        height: 100%;
+    }
+
+    .accordion-project-pricing {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .price-basic {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+
+    }
+
+    .price-premium {
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+
+    }
+
+    .price-standard {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .accordion .content.is-expanded {
+        max-height: 100%;
+        overflow: hidden;
+        padding: 0px 10px;
+        opacity: 1;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .for-project-img img {
+        width: 100%;
+    }
+
+    .accordion-btn {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {}

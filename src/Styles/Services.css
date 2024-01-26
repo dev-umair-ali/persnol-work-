@@ -124,3 +124,51 @@
     width: 80%;
     margin: auto
 }
+
+@media (max-width: 768px) {
+    .services-top-text h1 {
+        font-size: 100px;
+    }
+
+    .services-top-text p {
+        width: 90%;
+    }
+
+    .services-hero-main {
+        flex-direction: column;
+        width: 90%;
+        padding: 0px 0px 50px 0px;
+    }
+
+    .services-top-text {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 60px 0px 0px 0px;
+    }
+
+    .services-Hero-text {
+        width: 90%;
+    }
+
+    .services-Hero-boxes {
+        width: 100%;
+        margin: auto;
+        /* padding: 0px 0px; */
+    }
+
+    .services-Hero-text p {
+        font-size: 16px;
+        color: #ffff;
+        padding: 10px 0px 50px 0px;
+    }
+
+    .services-acro {
+        width: 100%;
+        margin: auto;
+    }
+
+    .services-main {
+        padding-top: 100px;
+    }
+}

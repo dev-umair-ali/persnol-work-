@@ -221,3 +221,91 @@
     text-transform: uppercase;
     display: inline-block;
 }
+
+@media only screen and (max-width: 768px) {
+    .accordion .content.is-expanded {
+        max-height: 100%;
+        overflow: hidden;
+        padding: 0px 10px;
+        opacity: 1;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .accordion-text {
+        width: 100%;
+    }
+
+    .custom-div-1 {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 15px 0;
+
+    }
+
+    .custom-div-3 {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+
+
+    .custom-div-2 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+
+    .accordion-text h1 {
+        font-size: 40px;
+    }
+
+    .accordion-text h3 {
+        font-size: 16px;
+    }
+
+    .accordion-text p {
+        font-size: 12px;
+    }
+
+    .accordion-imgs {
+        padding: 15px 0;
+    }
+
+    .accrodion-whiteline {
+        width: 100%;
+    }
+
+    .accordion-item {
+        width: 100%;
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+
+    .accordion .content &.is-expanded {
+        max-height: 100%;
+        overflow: hidden;
+        padding: 20px 0px;
+        opacity: 1;
+        margin-bottom: 10px;
+        /* margin-top: -50px; */
+        border-radius: 10px;
+    }
+
+    .accordion-text {
+        width: 100%;
+        padding: 5px;
+    }
+}

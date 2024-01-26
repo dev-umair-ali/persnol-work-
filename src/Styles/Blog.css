@@ -41,3 +41,247 @@
     margin: auto;
     padding-bottom: 40px;
 }
+
+* {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+.about-us-main {
+    background-image: url("../assets/Images/main-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 200px;
+}
+
+.about-us-main-text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.about-us-main-text h1 {
+    font-family: Deutschlander;
+    font-size: 150px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+}
+
+.about-us-main-text p {
+    font-size: 16px;
+    color: #ffff;
+    padding: 20px 0px 10px 0px;
+    width: 70%;
+    margin: auto;
+}
+
+/* ----------.Empowering-main------------- */
+.Empowering-main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.Empowering-main h1 {
+    font-family: Deutschlander;
+    font-size: 85px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+}
+
+.Empowering-main h3 {
+    font-size: 30px;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.Empowering-main p {
+    font-size: 16px;
+    color: #ffff;
+    padding: 20px 0px 10px 0px;
+    width: 70%;
+    margin: auto;
+}
+
+.Empowering-text img {
+    width: 40%;
+    padding-top: 50px;
+}
+
+.Empowering-text img {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    65% {
+        transform: translate(0, 15px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+/* =========our-journey-main"============== */
+.our-journey-main {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.our-journey-tex {
+    width: 50%;
+}
+
+.our-journey-tex h1 {
+    font-family: Deutschlander;
+    font-size: 85px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+}
+
+.our-journey-tex p {
+    font-size: 16px;
+    color: #ffff;
+    padding: 20px 0px 10px 0px;
+}
+
+.our-journey-img {
+    width: 50%;
+}
+
+.our-journey-img img {
+    width: 100%;
+}
+
+.for-b-about {
+    width: 50%;
+    border: 2px solid white;
+}
+
+/* .Our-Team-main */
+.Our-Team-main {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.Our-Team-main h1 {
+    font-family: Deutschlander;
+    font-size: 85px;
+    letter-spacing: 1px;
+    color: #ffff;
+    letter-spacing: 2px;
+    line-height: 85px;
+    padding: 10px 0px;
+}
+
+.Our-Team-main p {
+    font-size: 16px;
+    color: #ffff;
+    padding: 10px 0px 80px 0px;
+    width: 70%;
+    margin: auto;
+}
+
+/* -----------achieve-goals-main-------------- */
+.achieve-goals-main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0f2238;
+    padding: 40px 10px;
+    margin-top: 50px;
+
+}
+
+.achieve-goals-img img {
+    width: 70%;
+    margin-top: -90px;
+}
+
+.achieve-goals-img {
+    display: flex;
+    padding: 0px 60px;
+    width: 50%;
+    width: 50%;
+    justify-content: flex-end;
+
+
+}
+
+.achieve-goals-text {
+    width: 50%;
+    color: #ffff;
+    padding: 0px 0px 0px 60px;
+}
+
+.achieve-goals-text h1 {
+    font-size: 85px;
+    color: #ffff;
+    font-family: Deutschlander;
+    letter-spacing: 2px;
+    line-height: 85px;
+    text-transform: uppercase;
+}
+
+.achieve-goals-text p {
+    font-size: 30px;
+    color: #ffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .blogs-us-top-text {
+        width: 90%;
+        padding: 50px 0px;
+    }
+
+    .blogs-us-top-text p {
+        width: 90%;
+        margin: auto;
+    }
+
+    .blog-card-main {
+        width: 90%;
+    }
+
+    .card__content {
+        left: -12px;
+        padding: var(--spacing-l);
+        position: absolute;
+        bottom: -17px;
+    }
+}
