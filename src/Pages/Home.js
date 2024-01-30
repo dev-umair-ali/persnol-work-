@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
 import "../Styles/Home.css";
 import CircleAnimation from "../Components/CircleSlider";
 import Footer from "../Components/Footer";

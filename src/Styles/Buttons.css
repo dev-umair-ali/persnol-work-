@@ -1,94 +1,94 @@
 /* =================About US Btn===========================*/
 
-button {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    padding: 12px 24px;
-    text-transform: uppercase;
-    transition: all 0.1s ease;
-    border: none;
-    /*   outline-color: transparent; */
-    cursor: pointer;
-  }
-  .btn-7 {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    color: #ffff;
-    font-size: 16px;
-    text-align: center;
-    background: transparent;
-    border-radius: 50%;
-    margin-top: 50px;
-  }
-  
-  .btn-7 span:nth-child(1)::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 120px;
-    height: 120px;
-    border: 2px solid var(--clr-primary);
-    border-radius: 50%;
-    opacity: .5;
-  }
-  
-  .btn-7 span:nth-child(2)::before {
-    content: '';
-    position: absolute;
-    top: -7px;
-    left: -7px;
-    width: 135px;
-    height: 135px;
-    border: 2px solid var(--clr-primary);
-    border-radius: 50%;
-    opacity: .5;
-  }
-  
-  .btn-7 span:nth-child(3)::before {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    width: 150px;
-    height: 150px;
-    border: 2px solid var(--clr-primary);
-    border-radius: 50%;
-    opacity: .5;
-  }
-  
-  .btn-7:hover span:nth-child(1)::before,
-  .btn-7:focus span:nth-child(1)::before {
-    opacity: 1;
-    box-shadow: 0 0 20px var(--clr-primary);
-  }
-  
-  .btn-7:hover span:nth-child(2)::before,
-  .btn-7:focus span:nth-child(2)::before {
-    opacity: 1;
-    box-shadow: 0 0 10px var(--clr-primary),
-                0 0 20px var(--clr-primary),
-                inset 0 0 10px var(--clr-primary);
-  }
-  
-  .btn-7:hover span:nth-child(3)::before,
-  .btn-7:focus span:nth-child(3)::before {
-    opacity: 1;
-    box-shadow: 0 0 70px var(--clr-primary),
-                0 0 40px var(--clr-primary),
-                inset 0 0 5px var(--clr-primary);
-  }
-  
-  .btn-7:hover,
-  .btn-7:focus {
-    color: var(--clr-font);
-    background: var(--clr-primary);
-    opacity: 1;
-    box-shadow: 0 0 10px var(--clr-primary);
-  }
-  
-  
-  /* =================About US Btn===========================*/
+/* button {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-7 {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  color: #ffff;
+  font-size: 16px;
+  text-align: center;
+  background: transparent;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.btn-7 span:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  border: 2px solid var(--clr-primary);
+  border-radius: 50%;
+  opacity: .5;
+}
+
+.btn-7 span:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 135px;
+  height: 135px;
+  border: 2px solid var(--clr-primary);
+  border-radius: 50%;
+  opacity: .5;
+}
+
+.btn-7 span:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--clr-primary);
+  border-radius: 50%;s
+  opacity: .5;
+}
+
+.btn-7:hover span:nth-child(1)::before,
+.btn-7:focus span:nth-child(1)::before {
+  opacity: 1;
+  box-shadow: 0 0 20px var(--clr-primary);
+}
+
+.btn-7:hover span:nth-child(2)::before,
+.btn-7:focus span:nth-child(2)::before {
+  opacity: 1;
+  box-shadow: 0 0 10px var(--clr-primary),
+    0 0 20px var(--clr-primary),
+    inset 0 0 10px var(--clr-primary);
+}
+
+.btn-7:hover span:nth-child(3)::before,
+.btn-7:focus span:nth-child(3)::before {
+  opacity: 1;
+  box-shadow: 0 0 70px var(--clr-primary),
+    0 0 40px var(--clr-primary),
+    inset 0 0 5px var(--clr-primary);
+}
+
+.btn-7:hover,
+.btn-7:focus {
+  color: var(--clr-font);
+  background: var(--clr-primary);
+  opacity: 1;
+  box-shadow: 0 0 10px var(--clr-primary);
+} */
+
+
+/* =================About US Btn=========================== */
