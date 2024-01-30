@@ -1,10 +1,10 @@
 * {
+    margin: 0;
     padding: 0;
-    margin: auto;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
-
+    font-family: "Poppins", sans-serif;
 }
+
 
 .projects-main {
     background-image: url("../assets/Images/main-bg.png");
