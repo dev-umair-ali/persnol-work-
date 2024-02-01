@@ -1,28 +1,9 @@
+// Import necessary libraries and components
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Styles/BlogCard.css";
 import "../Styles/Blog.css";
 import Footer from "../Components/Footer";
-function Blogs() {
-  return (
-    <div className="blogs-us-main">
-      <div className="blogs-us-top-text">
-        <h1>Blogs</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.{" "}
-        </p>
-      </div>
-      {/* blog cards */}
-      <div className="blog-card-main">
-        <HeroSection />
-      </div>
-      <Footer />
-    </div>
-  );
-}
-
-export default Blogs;
 
 const cardsData = [
   {
@@ -30,6 +11,8 @@ const cardsData = [
       "https://res.cloudinary.com/dabxnoxsx/image/upload/v1706266425/fotis-fotopoulos-DuHKoV44prg-unsplash_eehbyr.jpg",
     category: "Category 1",
     heading: "Example Card Heading 1",
+    description:
+      "This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.This is an example description for the first blog.",
     date: "2024-01-26",
   },
   {
@@ -118,7 +101,7 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="card-grid">
         {cardsData.map((card, index) => (
-          <a className="card" href="#" key={index}>
+          <Link to={`/blogs/${index}`} className="card" key={index}>
             <div
               className="card__background"
               style={{ backgroundImage: `url(${card.imageUrl})` }}
@@ -127,10 +110,32 @@ const HeroSection = () => {
               <p className="card__category">{card.category}</p>
               <h3 className="card__heading">{card.heading}</h3>
               <p className="card__date">{card.date}</p>
+              <p className="card__description">{card.description}</p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
   );
 };
+
+const Blogs = () => {
+  return (
+    <div className="blogs-us-main">
+      <div className="blogs-us-top-text">
+        <h1>Blogs</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.{" "}
+        </p>
+      </div>
+      <div className="blog-card-main">
+        <HeroSection />
+      </div>
+      <Footer />
+    </div>
+  );
+};
+
+export default Blogs;
