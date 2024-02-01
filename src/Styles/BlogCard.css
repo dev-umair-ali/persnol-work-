@@ -111,7 +111,6 @@ body {
     padding: var(--spacing-l);
     position: absolute;
     bottom: 0;
-
 }
 
 .card__category {
@@ -135,4 +134,15 @@ body {
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
     line-height: 1.4;
     word-spacing: 100vw;
+}
+
+.card__description {
+    color: var(--text-lighter);
+    font-size: 14px;
+    max-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
 }
