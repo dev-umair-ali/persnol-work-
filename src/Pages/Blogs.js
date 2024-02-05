@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import "../Styles/BlogCard.css";
 import "../Styles/Blog.css";
 import Footer from "../Components/Footer";
+import { Fade, Zoom } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 const cardsData = [
   {
@@ -108,7 +110,10 @@ const HeroSection = () => {
             ></div>
             <div className="card__content">
               <p className="card__category">{card.category}</p>
-              <h3 className="card__heading">{card.heading}</h3>
+              <Zoom>
+                <h3 className="card__heading">{card.heading}</h3>
+              </Zoom>
+
               <p className="card__date">{card.date}</p>
               <p className="card__description">{card.description}</p>
             </div>
@@ -123,17 +128,22 @@ const Blogs = () => {
   return (
     <div className="blogs-us-main">
       <div className="blogs-us-top-text">
-        <h1>Blogs</h1>
+        <Slide>
+          <h1>Blogs</h1>
+        </Slide>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut.{" "}
         </p>
       </div>
-      <div className="blog-card-main">
-        <HeroSection />
-      </div>
-      <Footer />
+      <Fade duration={3500}>
+        <div className="blog-card-main">
+          <HeroSection />
+        </div>
+
+        <Footer />
+      </Fade>
     </div>
   );
 };

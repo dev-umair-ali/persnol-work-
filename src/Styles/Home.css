@@ -11,6 +11,10 @@ body {
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --clr-primary: #00E5FF;
   --clr-font: #1b2124;
@@ -625,5 +629,70 @@ body {
     font-size: 25px;
     color: #ffff;
     font-weight: 400;
+  }
+}
+
+
+
+
+
+
+.btn {
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to bottom, hotpink 0%, tomato 100%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+  border-radius: 50%;
+  line-height: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: black;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.btn:hover::before {
+  opacity: .4;
+  transform: scale(1.3);
+}
+
+.btn.is-clicked::before {
+  animation: blastOut 1s;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: .4;
+  }
+
+  to {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes blastOut {
+  from {
+    transform: scale(0.9);
+    opacity: .4;
+  }
+
+  to {
+    transform: scale(10);
+    opacity: 0;
   }
 }

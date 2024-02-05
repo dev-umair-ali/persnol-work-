@@ -8,85 +8,102 @@ import letsStart from "../assets/Images/Button-start-now-removebg-preview.png";
 import register from "../assets/Images/Button-register-removebg-preview.png";
 import Footer from "../Components/Footer";
 import "../Styles/Home.css";
+import { Fade, Zoom } from "react-awesome-reveal";
+import { Slide, AttentionSeeker } from "react-awesome-reveal";
 
 function ContactUs() {
   return (
     <div className="contact-us-main">
-      <div className="contact-us-top-text">
-        <h1>Contact</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.{" "}
-        </p>
-      </div>
-      {/* ===============GET YOUR QUOTE===================== */}
-      <div className="get-quote-main">
-        <div className="get-quote-text">
-          <h1>GET YOUR QUOTE</h1>
-          <h3>
-            If You Are Interested In Talking To Us About A Project, Pleas Send
-            Us A Message
-          </h3>
-          <p>
-            While the lovely valley teems with vapour around me, and the
-            meridian sun strikes the upper surface of the impenetrable foliage
-            of my trees. orem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut.{" "}
-          </p>
-        </div>
-        <div className="get-quote-form">
-          <MyForm />
-        </div>
-      </div>
-      {/* AIMNODE STATIONS */}
-      <div className="aimnode-stations-main">
-        <div className="aimnode-stations-text">
-          <h1>AIMNODE STATIONS</h1>
+      <Fade>
+        <div className="contact-us-top-text">
+          <Slide>
+            <h1>Contact</h1>
+          </Slide>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.{" "}
           </p>
         </div>
-        <div className="aimnode-stations-img">
-          <img src={map} alt="" />
-        </div>
-      </div>
-      {/*----------------------- Lets Get Started Your Project ----------------*/}
-      <div className="home-started-new">
-        <div className="home-started-text">
-          <h3>ARE YOU READY FOR</h3>
-          <h1>Lets Get Started Your Project</h1>
-        </div>
-        <div className="home-started-img-main">
-          <div className="home-btn1">
-            <button>
-              <img src={getoff} alt="Button 1" />
-            </button>
+        {/* ===============GET YOUR QUOTE===================== */}
+        <div className="get-quote-main">
+          <div className="get-quote-text">
+            <Slide>
+              <h1>GET YOUR QUOTE</h1>
+            </Slide>
+            <h3>
+              If You Are Interested In Talking To Us About A Project, Pleas Send
+              Us A Message
+            </h3>
+            <p>
+              While the lovely valley teems with vapour around me, and the
+              meridian sun strikes the upper surface of the impenetrable foliage
+              of my trees. orem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut.{" "}
+            </p>
           </div>
-          <div></div>
+          <div className="get-quote-form">
+            <Zoom>
+              <MyForm />
+            </Zoom>
+          </div>
+        </div>
+        {/* AIMNODE STATIONS */}
+        <div className="aimnode-stations-main">
+          <div className="aimnode-stations-text">
+            <Slide>
+              <h1>AIMNODE STATIONS</h1>
+            </Slide>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut.{" "}
+            </p>
+          </div>
+          <div className="aimnode-stations-img">
+            <Zoom>
+              <img src={map} alt="" />
+            </Zoom>
+          </div>
+        </div>
+        {/*----------------------- Lets Get Started Your Project ----------------*/}
+        <div className="home-started-new">
+          <div className="home-started-text">
+            <h3>ARE YOU READY FOR</h3>
+            <Slide>
+              <h1>Lets Get Started Your Project</h1>
+            </Slide>
+          </div>
+          <div className="home-started-img-main">
+            <div className="home-btn1">
+              <button>
+                <img src={getoff} alt="Button 1" />
+              </button>
+            </div>
+            <div></div>
 
-          <div className="home-started-img">
-            <img src={Started} alt="" />
-          </div>
+            <div className="home-started-img">
+              <img src={Started} alt="" />
+            </div>
 
-          <div className="home-btn-2">
-            <button>
-              <img src={register} alt="Button 2" />
-            </button>
-          </div>
-          <div className="home-btn-3">
-            <button>
-              <img src={letsStart} alt="Button 3" />
-            </button>
+            <div className="home-btn-2">
+              <button>
+                <img src={register} alt="Button 2" />
+              </button>
+            </div>
+            <div className="home-btn-3">
+              <button>
+                <img src={letsStart} alt="Button 3" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      {/*----------------------- Lets Get Started Your Project-End----------------*/}
-      <Footer />
+        {/*----------------------- Lets Get Started Your Project-End----------------*/}
+        <Footer />
+      </Fade>
     </div>
   );
 }
