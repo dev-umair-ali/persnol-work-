@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React, { memo } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Flyar from "../assets/Images/Flyar.png";
 import "../Styles/WhyUSCarousel.css";
 
-function WhyUSCarousel() {
+const WhyUSCarousel = memo(() => {
   const settings = {
     className: "center",
     infinite: true,
@@ -17,6 +16,7 @@ function WhyUSCarousel() {
     prevArrow: <WhyUsArrows direction="prev" />, // Use WhyUsArrows for the previous arrow
     nextArrow: <WhyUsArrows direction="next" />, // Use WhyUsArrows for the next arrow
   };
+
   return (
     <div className="recent">
       <Slider {...settings}>
@@ -61,6 +61,14 @@ function WhyUSCarousel() {
           </div>
         </div>
         <div className="recent-slide-main">
+          <div className="recent-img-main">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706099847/recent-1_fmxdi0.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="recent-slide-main">
           <div className="recent-img-main window">
             <img
               src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706100363/recent-2_zu8xwd.png"
@@ -100,12 +108,18 @@ function WhyUSCarousel() {
             />
           </div>
         </div>
+        <div className="recent-slide-main">
+          <div className="recent-img-main">
+            <img
+              src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706099847/recent-1_fmxdi0.jpg"
+              alt=""
+            />
+          </div>
+        </div>
       </Slider>
     </div>
   );
-}
-
-export default WhyUSCarousel;
+});
 
 const WhyUsArrows = ({ onClick, direction }) => {
   const arrowClass = `why-us-arrows why-us-${direction}`;
@@ -116,3 +130,5 @@ const WhyUsArrows = ({ onClick, direction }) => {
     </div>
   );
 };
+
+export default WhyUSCarousel;

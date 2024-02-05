@@ -5,6 +5,9 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .about-us-main {
   background-image: url("../assets/Images/main-bg.png");
