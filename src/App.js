@@ -45,6 +45,7 @@ import ContactUs from "./Pages/ContactUs";
 import Projects from "./Pages/Projects";
 import Services from "./Pages/Services";
 import BlogContent from "./Pages/BlogContent";
+import SmoothScroll from "./Components/SmoothScroll";
 function App() {
   const cardsData = [
     {
@@ -141,6 +142,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
+        <SmoothScroll />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

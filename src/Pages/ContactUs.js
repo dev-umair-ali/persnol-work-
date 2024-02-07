@@ -73,7 +73,7 @@ function ContactUs() {
         <div className="home-started-new">
           <div className="home-started-text">
             <h3>ARE YOU READY FOR</h3>
-            <Slide>
+            <Slide triggerOnce>
               <h1>Lets Get Started Your Project</h1>
             </Slide>
           </div>
