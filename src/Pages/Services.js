@@ -15,7 +15,7 @@ function Services() {
     <div className="services-main">
       <Fade duration={2500}>
         <div className="services-top-text">
-          <Slide>
+          <Slide triggerOnce>
             <h1>Services</h1>
           </Slide>
           <p>
@@ -28,7 +28,7 @@ function Services() {
         {/* =============oure services Hero==================== */}
         <div className="services-hero-main">
           <div className="services-Hero-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>oure aservices</h1>
             </Slide>
             <p>
@@ -43,7 +43,7 @@ function Services() {
           </div>
 
           <div className="services-Hero-boxes">
-            <Zoom>
+            <Zoom triggerOnce>
               <div className="box-wraper">
                 <div className="hero-box1 h-box">
                   <img src={box1} alt="" />
@@ -71,7 +71,6 @@ function Services() {
         <div className="services-acro">
           <ServicesAccordion />
         </div>
-
         <Footer />
       </Fade>
     </div>

@@ -192,6 +192,7 @@ const ServicesAccordion = () => {
       <button type="button" className="btn" onClick={toggleExpand()}>
         Collapse All
       </button> */}
+
       <dl className="accordion">
         {accordionList.map((item, index) => (
           <Accordion

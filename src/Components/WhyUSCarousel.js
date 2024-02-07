@@ -26,6 +26,7 @@ const WhyUSCarousel = memo(() => {
               src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706100363/recent-2_zu8xwd.png"
               alt=""
             />
+            <h1>hello</h1>
           </div>
         </div>
         <div className="recent-slide-main">

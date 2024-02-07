@@ -21,7 +21,7 @@ function About() {
     <div className="about-us-main">
       <Fade top duration={2500}>
         <div className="about-us-main-text">
-          <Slide>
+          <Slide triggerOnce>
             <h1>ABOUT US</h1>
           </Slide>
           <p>
@@ -33,7 +33,7 @@ function About() {
         {/* -----------Empowering Brands------------- */}
         <div className="Empowering-main">
           <div className="Empowering-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>Empowering Brands</h1>
             </Slide>
 
@@ -55,7 +55,7 @@ function About() {
         {/* ==========OUR JOURNEY ===============*/}
         <div className="our-journey-main">
           <div className="our-journey-tex">
-            <Slide>
+            <Slide triggerOnce>
               <h1>OUR JOURNEY</h1>
             </Slide>
 
@@ -82,7 +82,7 @@ function About() {
         {/* ==============why-chose-us-main============= */}
         <div className="why-chose-us-main">
           <div className="why-us-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>WHY YOU CHOOSE US</h1>
             </Slide>
 
@@ -137,7 +137,7 @@ function About() {
         {/* ===========Our Team============ */}
         <div className="Our-Team-main">
           <div className="Our-Team-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>Our Team</h1>
             </Slide>
             <p>
@@ -146,7 +146,7 @@ function About() {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut.{" "}
             </p>
-            <Zoom>
+            <Zoom triggerOnce>
               <div className="Our-Team-carousel">
                 <AboutUsCarousel />
               </div>
@@ -157,7 +157,7 @@ function About() {
         <div className="achieve-goals-main">
           <div className="achieve-goals-text">
             <p>We will help you to</p>
-            <Slide>
+            <Slide triggerOnce>
               <h1>achieve your goals</h1>
             </Slide>
 
@@ -173,7 +173,7 @@ function About() {
         <div className="home-started-new">
           <div className="home-started-text">
             <h3>ARE YOU READY FOR</h3>
-            <Slide>
+            <Slide triggerOnce>
               <h1>Lets Get Started Your Project</h1>
             </Slide>
           </div>
