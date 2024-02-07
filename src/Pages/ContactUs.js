@@ -16,7 +16,7 @@ function ContactUs() {
     <div className="contact-us-main">
       <Fade>
         <div className="contact-us-top-text">
-          <Slide>
+          <Slide triggerOnce>
             <h1>Contact</h1>
           </Slide>
           <p>
@@ -28,7 +28,7 @@ function ContactUs() {
         {/* ===============GET YOUR QUOTE===================== */}
         <div className="get-quote-main">
           <div className="get-quote-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>GET YOUR QUOTE</h1>
             </Slide>
             <h3>
@@ -45,7 +45,7 @@ function ContactUs() {
             </p>
           </div>
           <div className="get-quote-form">
-            <Zoom>
+            <Zoom triggerOnce>
               <MyForm />
             </Zoom>
           </div>
@@ -53,7 +53,7 @@ function ContactUs() {
         {/* AIMNODE STATIONS */}
         <div className="aimnode-stations-main">
           <div className="aimnode-stations-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>AIMNODE STATIONS</h1>
             </Slide>
             <p>
@@ -64,7 +64,7 @@ function ContactUs() {
             </p>
           </div>
           <div className="aimnode-stations-img">
-            <Zoom>
+            <Zoom triggerOnce>
               <img src={map} alt="" />
             </Zoom>
           </div>

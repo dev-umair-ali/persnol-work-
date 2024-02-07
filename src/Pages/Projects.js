@@ -15,7 +15,7 @@ function Projects() {
     <div className="projects-main">
       <Fade duration={2500}>
         <div className="projects-top-text">
-          <Slide>
+          <Slide triggerOnce>
             <h1>Projects</h1>
           </Slide>
           <p>
@@ -27,7 +27,7 @@ function Projects() {
         {/* ===============project-hero-sec==================== */}
         <div className="project-hero-sec">
           <div className="project-hero-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>
                 {" "}
                 We pledge ourselves to <br /> outstanding project
@@ -46,7 +46,7 @@ function Projects() {
             </p>
           </div>
           <div className="project-hero-img">
-            <Zoom>
+            <Zoom triggerOnce>
               <img
                 src="https://res.cloudinary.com/dabxnoxsx/image/upload/v1706179850/project1_ads3jr.png"
                 alt=""
@@ -61,7 +61,7 @@ function Projects() {
         <div className="home-started-new">
           <div className="home-started-text">
             <h3>ARE YOU READY FOR</h3>
-            <Slide>
+            <Slide triggerOnce>
               <h1>Lets Get Started Your Project</h1>
             </Slide>
           </div>

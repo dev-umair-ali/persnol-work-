@@ -15,7 +15,7 @@ import "../Styles/Buttons.css";
 import ShootingStar from "../Components/ShootingStar";
 import WorkFlow from "../Components/WorkFlow";
 // import BlackComponent from "../Components/Hologram";
-import Hologram from "../Components/Hologram";
+// import Hologram from "../Components/Hologram";
 // import Fade from "react-reveal/Fade";
 import { Fade } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
@@ -28,7 +28,7 @@ function Home() {
       <Fade top duration={2500}>
         <div className="home-hero-sec">
           <div className="home-hero-sec-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>
                 WELCOME TO
                 <br /> AIMNODE TECHNOLOGIES
@@ -40,7 +40,7 @@ function Home() {
               journey for your brand.
             </p>
           </div>
-          <Zoom>
+          <Zoom triggerOnce>
             <div className="home-hero-sec-img">
               <CircleAnimation />
               <img
@@ -70,7 +70,7 @@ function Home() {
         {/* -------------------ABOUT US--------------------------*/}
         <div className="Home-about-us-main">
           <div className="home-about-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>ABOUT US</h1>
             </Slide>
             <h3>Empowering Brands, Transforming Digital Landscapes.</h3>
@@ -102,13 +102,13 @@ function Home() {
         </div>
         {/* -------------------ABOUT US-End-------------------------*/}
         <div style={{ widows: "80%", margin: "auto" }}>
-          <Hologram />
+          {/* <Hologram /> */}
         </div>
 
         {/* ----------------------------RECENT WORK -----------------------*/}
         <div className="renent-work-main">
           <div className="renent-work-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>RECENT WORK</h1>
             </Slide>
 
@@ -128,7 +128,7 @@ function Home() {
         {/* --------------------------What our client says--------------- */}
         <div className="home-client-says">
           <div className="home-client-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>What our client says</h1>
             </Slide>
             <p>
@@ -181,7 +181,7 @@ function Home() {
         {/*--------------------------- WHY YOU CHOOSE US---------------------------- */}
         <div className="why-chose-us-main">
           <div className="why-us-text">
-            <Slide>
+            <Slide triggerOnce>
               <h1>WHY YOU CHOOSE US</h1>
             </Slide>
             <h3 style={{ color: "white", fontSize: "25px" }}>
@@ -240,7 +240,7 @@ function Home() {
         <div className="home-started-new">
           <div className="home-started-text">
             <h3>ARE YOU READY FOR</h3>
-            <Slide>
+            <Slide triggerOnce>
               <h1>Lets Get Started Your Project</h1>
             </Slide>
           </div>
@@ -272,8 +272,9 @@ function Home() {
           </div>
         </div>
         {/*----------------------- Lets Get Started Your Project-End----------------*/}
+
+        <Footer />
       </Fade>
-      <Footer />
     </div>
   );
 }
