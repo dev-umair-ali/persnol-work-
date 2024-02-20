@@ -55,7 +55,7 @@ function Home() {
               alt=""
             />
           </div>
-          {/* <ShootingStar /> */}
+          <ShootingStar />
         </div>
 
         {/*------------------ home-hero-section-End---------------*/}

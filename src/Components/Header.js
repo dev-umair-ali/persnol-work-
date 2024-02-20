@@ -48,6 +48,7 @@ const Header = () => {
             <li>BLOGS</li>
           </NavLink>
         </ul>
+
         <div className="contact-us-nbr1">1234566778</div>
       </nav>
       <div className="contact-us-nbr">1234566778</div>
