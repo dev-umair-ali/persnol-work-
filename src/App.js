@@ -142,7 +142,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <SmoothScroll />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -156,6 +156,7 @@ function App() {
             element={<BlogContent cardsData={cardsData} />}
           />
         </Routes>
+        <SmoothScroll />
       </BrowserRouter>
     </div>
   );
